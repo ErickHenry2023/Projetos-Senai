@@ -1,0 +1,201 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+
+#topo {
+    width: 100%;
+    height: 100px;
+    background-color: #7d0093;
+}
+
+#topo > img{
+    width: 100px;
+    height: 80px;
+}
+
+#topo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    background-color: none;  /*cor menu*/
+    font-size: 3em;
+    align-items: center;
+}
+
+nav ul a{
+    text-decoration: none;
+    padding: 2em;
+    color: #FFCC00;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li a{
+    color: #000; /*cor da letra*/
+    text-decoration: none;
+    padding: 7px 7px; /*tamanho caixa de menu*/
+    display: block;
+    border-right: 1px solid #eeffee;
+    border-radius: 20px;
+    background-color: #7d0093;
+    border: 5px solid #FFCC00; /* borda menu*/
+    
+}
+
+.menu li a:hover{
+    background-color: #FF9933;  /*cor do fundo menu*/
+    
+}
+
+#logo-area > img{
+    padding: 3em 0 0 0;
+    width: 10%;
+    /*Tamanho da IMG*/
+}
+
+/****************INICIO da animação banner****************/
+.banner{
+    width: 1345px;
+    height: 500px;
+    border: 3px solid #FFCC00;
+    margin: auto;
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes banner {
+    0%, 30%{
+        background-image: url(banner\ 1.jpg);
+        opacity: 1;
+    }
+    31%, 34%{
+        opacity: 0.20;
+    }
+    35%, 65%{
+        background-image: url(banner\ 2.jpg);
+        opacity: 1;
+    }
+    66%, 69%{
+        opacity: 0.20;
+    }
+    70%, 100%{
+        opacity: 1;
+        background-image: url(banner\ 3.jpg)
+    }
+}
+/****************FIM da animação banner****************/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /*Fonte texto*/
+    background-color: #FFCC00;
+    /*Cor do Fundo*/
+}
+
+.calendario-area {
+ display: flex;
+justify-content: center;
+margin-top: 100px;
+}
+/** Ajustar o calendario**/
+
+h1 {
+text-align: center;
+margin-top: 100px;
+}
+
+#img-social {
+display: flex;
+justify-content: space-evenly;
+margin-top: 50px;
+margin-left: 3em;
+}
+
+#img-social img{
+width: 100px;
+height: 80px;;
+}
+
+
+.caixa{
+    width: 220px;
+    height: 200px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(187, 187, 187);
+    box-shadow: 0 2px 5px #000;  
+
+
+}
+
+.caixa2{
+    display: flex;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.caixa3{
+    display: flex;
+    margin-left: 5em;
+    margin-right: 2em;
+    margin-top: 30px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+address {
+    padding: 10px 0;
+    font-style: normal;
+}
+
+#rodape {
+    width: 100%;
+    height: 112px;
+    background-color: #7d0093;
+    display: flex;
+}
+
+#rodape > img{
+    width: 100px;
+    height: 90px;
+    display: flex;
+}
+
+.fas{
+    display: flex;
+    font-size: 3em;
+}
+
+.icone {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+ 
