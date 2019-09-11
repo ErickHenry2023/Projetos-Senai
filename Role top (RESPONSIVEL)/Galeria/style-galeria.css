@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: -webkit-center;
+}
+
+/*****************TOPO********************/
+#topo {
+    width: 100%;
+    height: 9.000em;
+    background-color: #7d0093;
+}
+
+#topo > img{
+    width: 9.000em;
+    height: 7.000em;
+}
+
+#topo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*****************TOPO********************/
+
+
+
+/*****************NAV*********************/
+nav ul{
+    display: flex;
+    list-style-type: none;
+    background-color: none;  /*cor menu*/
+    font-size: 1.7em;
+    align-items: center;
+}
+
+nav ul a{
+    text-decoration: none;
+    padding: 2em;       /*(((((((((((((((PADDING)))))))))))))*/
+    color: #FFCC00;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li a{
+    color: #000; /*cor da letra*/
+    text-decoration: none;
+    padding: 0.4000em 0.4000em; /*tamanho caixa de menu*/ /*(((((((((((((((PADDING)))))))))))))*/
+    display: block;
+    /* border-right: 1px solid #eeffee; */
+    border-radius: 40.000em;
+    background-color: #7d0093;
+    border: 0.15em solid #FFCC00; /* borda menu*/  
+}
+
+.menu li a:hover{
+    background-color: #FF9933;  /*cor do fundo menu*/
+}
+
+#logo-area > img{
+    padding: 3em 0 0 0;
+    width: 10%;
+}
+/*****************NAV*********************/
+
+
+
+/****************INICIO da animação banner****************/
+.banner{
+    width: 100%;
+    height: 43.75em;
+    /* border: 3px solid #FFCC00; */
+    margin: auto;
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes banner {
+    0%, 30%{
+        background-image: url(banner\ 1.jpg);
+        opacity: 1;
+    }
+    31%, 34%{
+        opacity: 0.20;
+    }
+    35%, 65%{
+        background-image: url(banner\ 2.jpg);
+        opacity: 1;
+    }
+    66%, 69%{
+        opacity: 0.20;
+    }
+    70%, 100%{
+        opacity: 1;
+        background-image: url(banner\ 3.jpg)
+    }
+}
+/****************FIM da animação banner****************/
+
+
+
+/********GALERIA*************/
+ul{
+    width: 75em;
+    list-style: none;
+    display: flex;
+    margin: 6.25em auto;
+}
+
+.min{
+    width: 12.5em;
+    padding: 0.625em;
+}
+
+.lbox{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.lbox:target{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(10, 10, 10, .7);
+
+    position: fixed;
+}
+
+.box-img{
+    width: 62.5em;
+    margin: 9.375em auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: absolute;
+    width: 3.125em;
+    height: 3.125em;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#prev{
+    left: 23%;
+    top: 50%;
+}
+
+#next{
+    right: 23%;
+    top: 50%;
+}
+
+#close{
+    top: 0;
+    right: 25%;
+    margin-top: 8%;
+}
+
+.box-img img{
+    opacity: 0;
+}
+
+.lbox:target .box-img img{
+    opacity: 1;
+    transition: opacity .4s linear;
+}
+/********GALERIA*************/
+
+
+
+/************CORPO*************/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9375em;
+    /*Fonte texto*/
+    background-color: #FFCC00;
+    /*Cor do Fundo*/
+}
+
+h1 {
+    text-align: center;
+    margin-top: 6.25em;
+}
+/************CORPO*************/
+
+
+
+
+/************IMG-CAIXAS************/
+#img-social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3.125em;
+    margin-left: 3em;
+}
+
+#img-social img{
+    width: 6.25em;
+    height: 5em;
+}
+
+.caixa{
+    width: 13.75em;
+    height: 12.5em;
+    margin: auto;
+    margin-top: 1.875em;
+    background-color: rgb(255, 255, 255);
+    border: 0.1875em solid rgb(187, 187, 187);
+    box-shadow: 0 0.125em 0.3125em #000;  
+}
+
+.caixa2{
+    display: flex;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.caixa3{
+    display: flex;
+    margin-left: 5em;
+    margin-right: 2em;
+    margin-top: 1.875em;
+}
+/************IMG-CAIXAS************/
+
+
+
+/************RODAPE-footer*************/
+
+#rodape {
+    width: 100%;
+    height: 7em;
+    background-color: #7d0093;
+    display: flex;
+}
+
+#rodape > img{
+    width: 6.25em;
+    height: 5.625em;
+    align-self: center;
+}
+
+address {
+    padding: 0.625em 0;    /*(((((((((((((((PADDING)))))))))))))*/
+    font-style: normal;
+}
+
+footer{
+    text-align: center;
+    margin-top: 1.875em;
+}
+
+.fas{
+    display: flex;
+    font-size: 2em;
+}
+
+.icone {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+/************RODAPE*************/
