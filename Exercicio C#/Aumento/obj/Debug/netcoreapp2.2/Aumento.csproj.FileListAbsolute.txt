@@ -1,0 +1,11 @@
+C:\Users\23516467894\Documents\Exercicios\Aumento\bin\Debug\netcoreapp2.2\Aumento.deps.json
+C:\Users\23516467894\Documents\Exercicios\Aumento\bin\Debug\netcoreapp2.2\Aumento.runtimeconfig.json
+C:\Users\23516467894\Documents\Exercicios\Aumento\bin\Debug\netcoreapp2.2\Aumento.runtimeconfig.dev.json
+C:\Users\23516467894\Documents\Exercicios\Aumento\bin\Debug\netcoreapp2.2\Aumento.dll
+C:\Users\23516467894\Documents\Exercicios\Aumento\bin\Debug\netcoreapp2.2\Aumento.pdb
+C:\Users\23516467894\Documents\Exercicios\Aumento\obj\Debug\netcoreapp2.2\Aumento.csprojAssemblyReference.cache
+C:\Users\23516467894\Documents\Exercicios\Aumento\obj\Debug\netcoreapp2.2\Aumento.csproj.CoreCompileInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Aumento\obj\Debug\netcoreapp2.2\Aumento.AssemblyInfoInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Aumento\obj\Debug\netcoreapp2.2\Aumento.AssemblyInfo.cs
+C:\Users\23516467894\Documents\Exercicios\Aumento\obj\Debug\netcoreapp2.2\Aumento.dll
+C:\Users\23516467894\Documents\Exercicios\Aumento\obj\Debug\netcoreapp2.2\Aumento.pdb

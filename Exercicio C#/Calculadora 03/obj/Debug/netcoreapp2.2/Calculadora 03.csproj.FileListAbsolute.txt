@@ -1,0 +1,4 @@
+C:\Users\23516467894\Documents\Exercicios\Calculadora 03\obj\Debug\netcoreapp2.2\Calculadora 03.csprojAssemblyReference.cache
+C:\Users\23516467894\Documents\Exercicios\Calculadora 03\obj\Debug\netcoreapp2.2\Calculadora 03.csproj.CoreCompileInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Calculadora 03\obj\Debug\netcoreapp2.2\Calculadora 03.AssemblyInfoInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Calculadora 03\obj\Debug\netcoreapp2.2\Calculadora 03.AssemblyInfo.cs
