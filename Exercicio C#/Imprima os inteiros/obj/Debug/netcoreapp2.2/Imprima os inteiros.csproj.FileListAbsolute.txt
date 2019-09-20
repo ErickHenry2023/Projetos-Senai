@@ -1,0 +1,11 @@
+C:\Users\23516467894\Documents\Exercicios\Imprima os inteiros\bin\Debug\netcoreapp2.2\Imprima os inteiros.deps.json
+C:\Users\23516467894\Documents\Exercicios\Imprima os inteiros\bin\Debug\netcoreapp2.2\Imprima os inteiros.runtimeconfig.json
+C:\Users\23516467894\Documents\Exercicios\Imprima os inteiros\bin\Debug\netcoreapp2.2\Imprima os inteiros.runtimeconfig.dev.json
+C:\Users\23516467894\Documents\Exercicios\Imprima os inteiros\bin\Debug\netcoreapp2.2\Imprima os inteiros.dll
+C:\Users\23516467894\Documents\Exercicios\Imprima os inteiros\bin\Debug\netcoreapp2.2\Imprima os inteiros.pdb
+C:\Users\23516467894\Documents\Exercicios\Imprima os inteiros\obj\Debug\netcoreapp2.2\Imprima os inteiros.csprojAssemblyReference.cache
+C:\Users\23516467894\Documents\Exercicios\Imprima os inteiros\obj\Debug\netcoreapp2.2\Imprima os inteiros.csproj.CoreCompileInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Imprima os inteiros\obj\Debug\netcoreapp2.2\Imprima os inteiros.AssemblyInfoInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Imprima os inteiros\obj\Debug\netcoreapp2.2\Imprima os inteiros.AssemblyInfo.cs
+C:\Users\23516467894\Documents\Exercicios\Imprima os inteiros\obj\Debug\netcoreapp2.2\Imprima os inteiros.dll
+C:\Users\23516467894\Documents\Exercicios\Imprima os inteiros\obj\Debug\netcoreapp2.2\Imprima os inteiros.pdb
