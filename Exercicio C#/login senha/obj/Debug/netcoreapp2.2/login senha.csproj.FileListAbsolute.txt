@@ -1,0 +1,11 @@
+C:\Users\23516467894\Documents\Exercicios\login senha\bin\Debug\netcoreapp2.2\login senha.deps.json
+C:\Users\23516467894\Documents\Exercicios\login senha\bin\Debug\netcoreapp2.2\login senha.runtimeconfig.json
+C:\Users\23516467894\Documents\Exercicios\login senha\bin\Debug\netcoreapp2.2\login senha.runtimeconfig.dev.json
+C:\Users\23516467894\Documents\Exercicios\login senha\bin\Debug\netcoreapp2.2\login senha.dll
+C:\Users\23516467894\Documents\Exercicios\login senha\bin\Debug\netcoreapp2.2\login senha.pdb
+C:\Users\23516467894\Documents\Exercicios\login senha\obj\Debug\netcoreapp2.2\login senha.csprojAssemblyReference.cache
+C:\Users\23516467894\Documents\Exercicios\login senha\obj\Debug\netcoreapp2.2\login senha.csproj.CoreCompileInputs.cache
+C:\Users\23516467894\Documents\Exercicios\login senha\obj\Debug\netcoreapp2.2\login senha.AssemblyInfoInputs.cache
+C:\Users\23516467894\Documents\Exercicios\login senha\obj\Debug\netcoreapp2.2\login senha.AssemblyInfo.cs
+C:\Users\23516467894\Documents\Exercicios\login senha\obj\Debug\netcoreapp2.2\login senha.dll
+C:\Users\23516467894\Documents\Exercicios\login senha\obj\Debug\netcoreapp2.2\login senha.pdb

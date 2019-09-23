@@ -1,0 +1,11 @@
+C:\Users\23516467894\Documents\Exercicios\data nasc\bin\Debug\netcoreapp2.2\data nasc.deps.json
+C:\Users\23516467894\Documents\Exercicios\data nasc\bin\Debug\netcoreapp2.2\data nasc.runtimeconfig.json
+C:\Users\23516467894\Documents\Exercicios\data nasc\bin\Debug\netcoreapp2.2\data nasc.runtimeconfig.dev.json
+C:\Users\23516467894\Documents\Exercicios\data nasc\bin\Debug\netcoreapp2.2\data nasc.dll
+C:\Users\23516467894\Documents\Exercicios\data nasc\bin\Debug\netcoreapp2.2\data nasc.pdb
+C:\Users\23516467894\Documents\Exercicios\data nasc\obj\Debug\netcoreapp2.2\data nasc.csprojAssemblyReference.cache
+C:\Users\23516467894\Documents\Exercicios\data nasc\obj\Debug\netcoreapp2.2\data nasc.csproj.CoreCompileInputs.cache
+C:\Users\23516467894\Documents\Exercicios\data nasc\obj\Debug\netcoreapp2.2\data nasc.AssemblyInfoInputs.cache
+C:\Users\23516467894\Documents\Exercicios\data nasc\obj\Debug\netcoreapp2.2\data nasc.AssemblyInfo.cs
+C:\Users\23516467894\Documents\Exercicios\data nasc\obj\Debug\netcoreapp2.2\data nasc.dll
+C:\Users\23516467894\Documents\Exercicios\data nasc\obj\Debug\netcoreapp2.2\data nasc.pdb
