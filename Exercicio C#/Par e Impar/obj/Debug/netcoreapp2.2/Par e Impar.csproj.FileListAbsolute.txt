@@ -1,0 +1,11 @@
+C:\Users\23516467894\Documents\Exercicios\Par e Impar\bin\Debug\netcoreapp2.2\Par e Impar.deps.json
+C:\Users\23516467894\Documents\Exercicios\Par e Impar\bin\Debug\netcoreapp2.2\Par e Impar.runtimeconfig.json
+C:\Users\23516467894\Documents\Exercicios\Par e Impar\bin\Debug\netcoreapp2.2\Par e Impar.runtimeconfig.dev.json
+C:\Users\23516467894\Documents\Exercicios\Par e Impar\bin\Debug\netcoreapp2.2\Par e Impar.dll
+C:\Users\23516467894\Documents\Exercicios\Par e Impar\bin\Debug\netcoreapp2.2\Par e Impar.pdb
+C:\Users\23516467894\Documents\Exercicios\Par e Impar\obj\Debug\netcoreapp2.2\Par e Impar.csprojAssemblyReference.cache
+C:\Users\23516467894\Documents\Exercicios\Par e Impar\obj\Debug\netcoreapp2.2\Par e Impar.csproj.CoreCompileInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Par e Impar\obj\Debug\netcoreapp2.2\Par e Impar.AssemblyInfoInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Par e Impar\obj\Debug\netcoreapp2.2\Par e Impar.AssemblyInfo.cs
+C:\Users\23516467894\Documents\Exercicios\Par e Impar\obj\Debug\netcoreapp2.2\Par e Impar.dll
+C:\Users\23516467894\Documents\Exercicios\Par e Impar\obj\Debug\netcoreapp2.2\Par e Impar.pdb

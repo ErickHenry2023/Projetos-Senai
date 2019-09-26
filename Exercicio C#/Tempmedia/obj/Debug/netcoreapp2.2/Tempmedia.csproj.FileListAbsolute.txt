@@ -1,0 +1,11 @@
+C:\Users\23516467894\Documents\Exercicios\Tempmedia\bin\Debug\netcoreapp2.2\Tempmedia.deps.json
+C:\Users\23516467894\Documents\Exercicios\Tempmedia\bin\Debug\netcoreapp2.2\Tempmedia.runtimeconfig.json
+C:\Users\23516467894\Documents\Exercicios\Tempmedia\bin\Debug\netcoreapp2.2\Tempmedia.runtimeconfig.dev.json
+C:\Users\23516467894\Documents\Exercicios\Tempmedia\bin\Debug\netcoreapp2.2\Tempmedia.dll
+C:\Users\23516467894\Documents\Exercicios\Tempmedia\bin\Debug\netcoreapp2.2\Tempmedia.pdb
+C:\Users\23516467894\Documents\Exercicios\Tempmedia\obj\Debug\netcoreapp2.2\Tempmedia.csprojAssemblyReference.cache
+C:\Users\23516467894\Documents\Exercicios\Tempmedia\obj\Debug\netcoreapp2.2\Tempmedia.csproj.CoreCompileInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Tempmedia\obj\Debug\netcoreapp2.2\Tempmedia.AssemblyInfoInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Tempmedia\obj\Debug\netcoreapp2.2\Tempmedia.AssemblyInfo.cs
+C:\Users\23516467894\Documents\Exercicios\Tempmedia\obj\Debug\netcoreapp2.2\Tempmedia.dll
+C:\Users\23516467894\Documents\Exercicios\Tempmedia\obj\Debug\netcoreapp2.2\Tempmedia.pdb
