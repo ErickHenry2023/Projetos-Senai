@@ -25,17 +25,19 @@ namespace MateODragao
                 {
                     case "1":
                         Console.Clear();
-                        Guerreiro guerreiro = new Guerreiro();
-                        guerreiro.Nome = "Berserk";
-                        guerreiro.Sobrenome = "Guts";
-                        guerreiro.CidadeNatal = "Tomar";
-                        guerreiro.DataNascimento = DateTime.Parse("18/12/1300");
-                        guerreiro.FerramentaAtaque = "Espada";
-                        guerreiro.FerramentaProtecao = "Escudo";
-                        guerreiro.Forca = 2;
-                        guerreiro.Destreza = 2;
-                        guerreiro.Inteligencia = 4;
-                        guerreiro.Vida = 20;
+
+                        Guerreiro guerreiro = CriarGuerreiro();
+                        // Guerreiro guerreiro = new Guerreiro();
+                        // guerreiro.Nome = "Berserk";
+                        // guerreiro.Sobrenome = "Guts";
+                        // guerreiro.CidadeNatal = "Tomar";
+                        // guerreiro.DataNascimento = DateTime.Parse("18/12/1300");
+                        // guerreiro.FerramentaAtaque = "Espada";
+                        // guerreiro.FerramentaProtecao = "Escudo";
+                        // guerreiro.Forca = 2;
+                        // guerreiro.Destreza = 2;
+                        // guerreiro.Inteligencia = 4;
+                        // guerreiro.Vida = 20;
 
                         Dragao dragao = new Dragao();       //classe, variavel e//
                         dragao.Nome = "Draco";
@@ -45,12 +47,12 @@ namespace MateODragao
                         dragao.Vida = 300;
 
                         /*INICIO - Primeiro Dialogo */
-                        System.Console.WriteLine($"{guerreiro.Nome.ToUpper()}: {guerreiro.Nome}, Vim-lhe Derotar!");
-                        System.Console.WriteLine($"{dragao.Nome.ToUpper()}: {dragao.Nome} , Seu Tolo");
+                        CriarDialogo(guerreiro.Nome, $"{dragao.Nome}, Vim-lhe Derotar!");
+                        CriarDialogo(dragao.Nome, "Seu Tolo");
+                        FinalizarDialogo();
+                        // System.Console.WriteLine($"{guerreiro.Nome.ToUpper()}: {dragao.Nome}, Vim-lhe Derotar!");
+                        // System.Console.WriteLine($"{dragao.Nome.ToUpper()}: Seu Tolo");
 
-                        System.Console.WriteLine();
-                        System.Console.WriteLine("Aperte Entre para prosseguir");
-                        Console.ReadLine();
                         /*FIM - Primeiro Dialogo */
 
 
@@ -62,7 +64,7 @@ namespace MateODragao
                         System.Console.WriteLine("BOOM: tá na hora do show!");
 
                         System.Console.WriteLine();
-                        System.Console.WriteLine("Aperte Entre para prosseguir");
+                        System.Console.WriteLine("Aperte Entre para prosseguir");       /*trocar por FinalizarDialogo(); */
                         Console.ReadLine();
 
                         /*FIM - Primeiro Dialogo */
@@ -91,15 +93,15 @@ namespace MateODragao
                                     int guerreiroDestrezaTotal = guerreiro.Destreza + numeroAleatorioJogador;
                                     int dragaoDestrezaTotal = dragao.Destreza + numeroAleatorioDragao;
 
-                                   if (guerreiroDestrezaTotal > dragaoDestrezaTotal){
-                                       System.Console.WriteLine($"{guerreiro.Nome.ToUpper()}: Toma essa !");
+                                if (guerreiroDestrezaTotal > dragaoDestrezaTotal){
+                                    System.Console.WriteLine($"{guerreiro.Nome.ToUpper()}: Toma essa !");
                                         dragao.Vida -= (poderAtaqueGuerreiro + 5);
                                         System.Console.WriteLine($"HP Dragão: {dragao.Vida}");
                                         System.Console.WriteLine($"HP Guerreiro: {guerreiro.Vida}");
-                                   }
+                                    }
                                     else
                                     {
-                                       System.Console.WriteLine($"{dragao.Nome.ToUpper()}: Você errou !"); 
+                                    System.Console.WriteLine($"{dragao.Nome.ToUpper()}: Você errou !"); 
                                     }
 
                                 break;
@@ -125,15 +127,15 @@ namespace MateODragao
                                     int guerreiroDestrezaTotal = guerreiro.Destreza + numeroAleatorioJogador;
                                     int dragaoDestrezaTotal = dragao.Destreza + numeroAleatorioDragao;
 
-                                   if ( guerreiroDestrezaTotal < dragaoDestrezaTotal){
-                                       System.Console.WriteLine($"{guerreiro.Nome.ToUpper()}: Vou te quiemar !");
+                                if ( guerreiroDestrezaTotal < dragaoDestrezaTotal){
+                                System.Console.WriteLine($"{guerreiro.Nome.ToUpper()}: Vou te quiemar !");
                                         dragao.Vida -= dragao.Forca;
                                         System.Console.WriteLine($"HP Dragão: {dragao.Vida}");
                                         System.Console.WriteLine($"HP Guerreiro: {guerreiro.Vida}");
-                                   }
+                                }
                                     else
                                     {
-                                       System.Console.WriteLine($"{dragao.Nome.ToUpper()}: Você errou !"); 
+                                    System.Console.WriteLine($"{dragao.Nome.ToUpper()}: Você errou !"); 
                                     }
 
                                     System.Console.WriteLine();
@@ -158,15 +160,15 @@ namespace MateODragao
                                     guerreiroDestrezaTotal = guerreiro.Destreza + numeroAleatorioJogador;
                                     dragaoDestrezaTotal = dragao.Destreza + numeroAleatorioDragao;
 
-                                   if (guerreiroDestrezaTotal > dragaoDestrezaTotal){
-                                       System.Console.WriteLine($"{guerreiro.Nome.ToUpper()}: Toma essa !");
+                                if (guerreiroDestrezaTotal > dragaoDestrezaTotal){
+                                    System.Console.WriteLine($"{guerreiro.Nome.ToUpper()}: Toma essa !");
                                         dragao.Vida -= (poderAtaqueGuerreiro + 5);
                                         System.Console.WriteLine($"HP Dragão: {dragao.Vida}");
                                         System.Console.WriteLine($"HP Guerreiro: {guerreiro.Vida}");
-                                   }
+                                }
                                     else
                                     {
-                                       System.Console.WriteLine($"{dragao.Nome.ToUpper()}: Você errou !"); 
+                                    System.Console.WriteLine($"{dragao.Nome.ToUpper()}: Você errou !"); 
                                     }
 
                                 break;
@@ -178,12 +180,20 @@ namespace MateODragao
                             } 
 
                         }
-
+                        
+                        if (guerreiro.Vida <=0)
+                        {
+                            System.Console.WriteLine("Você perdeu!");
+                        }
+                        if (dragao.Vida <=0)
+                        {
+                            System.Console.WriteLine("Você venceu!");
+                        }                    
 
                         break;
                     case "0":
                         jogadorNaoDesistiu = false;     //jogador desistiu false, ele digitou 0//
-                         System.Console.WriteLine("GAME OVER");      
+                        System.Console.WriteLine("GAME OVER");      
                         break;
                     default:
                         System.Console.WriteLine("Comando invalido!");
@@ -193,5 +203,36 @@ namespace MateODragao
 
 
         }
+    
+        public static void CriarDialogo(string nome, string frase)      /*"assinatura" */
+        {
+            System.Console.WriteLine($"{nome.ToUpper()}: {frase}");         /*"nome"=guerreio ou dragao/ "frase"=guerriro ou dragao */
+        }
+        public static void FinalizarDialogo()
+        {
+            System.Console.WriteLine();
+            System.Console.WriteLine("Aperte Entre para prosseguir");
+            Console.ReadLine();
+            Console.Clear();
+        }
+    
+        public static Guerreiro CriarGuerreiro()
+        {
+            Guerreiro guerreiro = new Guerreiro();
+            guerreiro.Nome = "Berserk";
+            guerreiro.Sobrenome = "Guts";
+            guerreiro.CidadeNatal = "Tomar";
+            guerreiro.DataNascimento = DateTime.Parse("18/12/1300");
+            guerreiro.FerramentaAtaque = "Espada";
+            guerreiro.FerramentaProtecao = "Escudo";
+            guerreiro.Forca = 2;
+            guerreiro.Destreza = 2;
+            guerreiro.Inteligencia = 4;
+            guerreiro.Vida = 20;
+
+            return guerreiro;
+        }
+
     }
+
 }
