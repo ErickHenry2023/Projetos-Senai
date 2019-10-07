@@ -13,16 +13,24 @@ namespace ByteBank
     //mesmos nome da classe (1)- não tem retorno (2) regras 1,2 p/ criar (o construtor  iniciar as informaçoes //
 
     // Construtor  INICIO///
-    public Cliente(string Nome, string Cpf, string Email){
+    public Cliente(string Nome, double v, string Cpf, string Email){
         this.Nome = Nome;
         this.Cpf = Cpf;
         this.Email = Email;
     }
-    // Construtor  FIM///
+
+        public Cliente(string nome, string cpf, string email)
+        {
+            Nome = nome;
+            Cpf = cpf;
+            Email = email;
+        }
+
+        // Construtor  FIM///
 
 
-    // Metodo  bool INICIO//
-    public bool TrocaSenha(string senha){
+        // Metodo  bool INICIO//
+        public bool TrocaSenha(string senha){
         if ((senha.Length >6) && (senha.Length < 16)){
             this.Senha = senha;
             return true;
