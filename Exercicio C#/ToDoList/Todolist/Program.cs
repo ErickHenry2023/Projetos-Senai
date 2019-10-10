@@ -24,7 +24,7 @@ namespace Todolist
 
                     TodoItem todoItem = new TodoItem(titulo, nota);
                     todoList.Add(todoItem);
-                                                                
+
                 }
 
             } catch (IOException ioe) {
@@ -57,6 +57,7 @@ namespace Todolist
                     break;
                     case 3:
                     System.Console.WriteLine("Tchau!");
+                    SaveItem(todoList,filePath);                              /*metodo p/ salvar */
                     break;
                     default:
                     System.Console.WriteLine("Opção invalida");
@@ -129,6 +130,40 @@ namespace Todolist
             } while(true);
         }
 
+        static void SaveItem(List<TodoItem> lista, string filePath)
+        {
+            List<string> linhas = new List<string>();
+            linhas.Add("tile,note");
+            foreach(TodoItem item in lista)                 /*pegar os item da lista */
+            {
+                string titulo = "\"" + item.Titulo + "\"";
+                string nota = "\"" + item.Nota + "\"";
+                linhas.Add(titulo + "," + nota);
+            }     
+            string tryAgain = "n";
+            do
+            {
 
+                try 
+            {
+                File.WriteAllLines(filePath, linhas);
+                tryAgain= "n";
+            }  catch(IOException e) 
+            
+            {
+                System.Console.WriteLine("Erro na gravação do arqrivo");
+                System.Console.WriteLine(e.Message);
+            
+            do
+            {
+                System.Console.WriteLine("Deseja tentar novamente (s/n)?");
+                tryAgain = Console.ReadLine().ToLower();
+            }while (tryAgain =="s" || tryAgain == "n");
+
+            }
+
+            }while (tryAgain !="n");
+        
+        }
     }
 }

@@ -18,7 +18,7 @@ namespace ByteBank
         this.Saldo = 0.0;
         }
     
-    // Metodoas
+    // Metodos
     public double deposito(double valor)
     {
         return this.Saldo += valor;   
@@ -34,9 +34,12 @@ namespace ByteBank
     }
     
     public bool transferencia(ContaCorrente contaDestino, double valor){           
-        if(this.saque((valor)){
+        if(this.saque((valor))){
             contaDestino.deposito(valor);
             return true;
         } else {
             return false;
+            }
         }
+    }
+}

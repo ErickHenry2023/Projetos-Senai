@@ -3,7 +3,7 @@ using System;
 namespace Aluno
 {
     public class Aluno{         //colocar public nos atributos p/ poder utilizar//
-        //Propiedades
+        //Propriedades
     public string Nome{get;set;}
     public string Curso{get;set;}
     public string Cpf{get;set;}
@@ -25,7 +25,7 @@ namespace Aluno
         public int[] getNotas(){return Notas;}
 
         public void setNotas(int bi, int nota){
-            int i= bi - 1
+            int i= bi - 1;
         }
 
     }
