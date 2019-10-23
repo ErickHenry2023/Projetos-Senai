@@ -46,11 +46,14 @@ namespace ByteBank
             
             ContaCorrente contaCorrente1 = new ContaCorrente(agencia,conta,cliente1);
             double saldo;
+            bool depositou=false;
+
             do{
                 System.Console.WriteLine("Entre com o saldo: ");
                 saldo = double.Parse(Console.ReadLine());
-                if (saldo > 0) {
-                    contaCorrente.Saldo = saldo;
+                depositou = contaCorrente1.Deposito(saldo);
+                if (!depositou) {
+                    contaCorrente1.Deposito(saldo);                /*alterei aqui contaCorrente1 */
                 } else {
                     System.Console.WriteLine("Valor do saldo deve ser positivo.");
                 }
@@ -63,12 +66,12 @@ namespace ByteBank
 
             #region  Depósito.
             System.Console.WriteLine("ByteBank - Depósito em Conta");
-            System.Console.WriteLine($"Bem Vindo - {usuario.Nome}");
-            System.Console.WriteLine($"Agencia {contaCorrente1.Agencia} Conta: {contaCorrente.Numero}");
+            System.Console.WriteLine($"Bem Vindo - {cliente1.Nome}");
+            System.Console.WriteLine($"Agencia {contaCorrente1._Agencia} Conta: {contaCorrente1._Numero}");  /*alterei aqui corrente1 */
             System.Console.WriteLine();
             System.Console.WriteLine("Digite o valor do Deposito: ");
             double valor = double.Parse(Console.ReadLine());
-            contaCorrente1.Deposito(Valor);
+            contaCorrente1.Deposito(valor);                                                                    /*alterei aqui "valor" e "deposito"*/
             System.Console.WriteLine();
             System.Console.WriteLine($"Novo saldo: {contaCorrente1.Saldo}");
             System.Console.WriteLine();
