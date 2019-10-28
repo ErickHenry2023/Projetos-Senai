@@ -1,0 +1,11 @@
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 11\bin\Debug\netcoreapp2.2\Exercicio 11.deps.json
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 11\bin\Debug\netcoreapp2.2\Exercicio 11.runtimeconfig.json
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 11\bin\Debug\netcoreapp2.2\Exercicio 11.runtimeconfig.dev.json
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 11\bin\Debug\netcoreapp2.2\Exercicio 11.dll
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 11\bin\Debug\netcoreapp2.2\Exercicio 11.pdb
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 11\obj\Debug\netcoreapp2.2\Exercicio 11.csprojAssemblyReference.cache
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 11\obj\Debug\netcoreapp2.2\Exercicio 11.csproj.CoreCompileInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 11\obj\Debug\netcoreapp2.2\Exercicio 11.AssemblyInfoInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 11\obj\Debug\netcoreapp2.2\Exercicio 11.AssemblyInfo.cs
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 11\obj\Debug\netcoreapp2.2\Exercicio 11.dll
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 11\obj\Debug\netcoreapp2.2\Exercicio 11.pdb
