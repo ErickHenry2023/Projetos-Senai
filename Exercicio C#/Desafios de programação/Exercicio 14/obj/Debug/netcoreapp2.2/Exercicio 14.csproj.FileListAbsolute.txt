@@ -9,3 +9,14 @@ C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 14\obj\Debug\net
 C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 14\obj\Debug\netcoreapp2.2\Exercicio 14.AssemblyInfo.cs
 C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 14\obj\Debug\netcoreapp2.2\Exercicio 14.dll
 C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 14\obj\Debug\netcoreapp2.2\Exercicio 14.pdb
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 14\bin\Debug\netcoreapp2.2\Exercicio 14.deps.json
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 14\bin\Debug\netcoreapp2.2\Exercicio 14.runtimeconfig.json
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 14\bin\Debug\netcoreapp2.2\Exercicio 14.runtimeconfig.dev.json
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 14\bin\Debug\netcoreapp2.2\Exercicio 14.dll
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 14\bin\Debug\netcoreapp2.2\Exercicio 14.pdb
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 14\obj\Debug\netcoreapp2.2\Exercicio 14.csprojAssemblyReference.cache
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 14\obj\Debug\netcoreapp2.2\Exercicio 14.csproj.CoreCompileInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 14\obj\Debug\netcoreapp2.2\Exercicio 14.AssemblyInfoInputs.cache
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 14\obj\Debug\netcoreapp2.2\Exercicio 14.AssemblyInfo.cs
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 14\obj\Debug\netcoreapp2.2\Exercicio 14.dll
+C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 14\obj\Debug\netcoreapp2.2\Exercicio 14.pdb
