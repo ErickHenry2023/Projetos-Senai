@@ -1,0 +1,11 @@
+C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 13\bin\Debug\netcoreapp2.2\Exercicio 13.deps.json
+C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 13\bin\Debug\netcoreapp2.2\Exercicio 13.runtimeconfig.json
+C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 13\bin\Debug\netcoreapp2.2\Exercicio 13.runtimeconfig.dev.json
+C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 13\bin\Debug\netcoreapp2.2\Exercicio 13.dll
+C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 13\bin\Debug\netcoreapp2.2\Exercicio 13.pdb
+C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 13\obj\Debug\netcoreapp2.2\Exercicio 13.csprojAssemblyReference.cache
+C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 13\obj\Debug\netcoreapp2.2\Exercicio 13.csproj.CoreCompileInputs.cache
+C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 13\obj\Debug\netcoreapp2.2\Exercicio 13.AssemblyInfoInputs.cache
+C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 13\obj\Debug\netcoreapp2.2\Exercicio 13.AssemblyInfo.cs
+C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 13\obj\Debug\netcoreapp2.2\Exercicio 13.dll
+C:\Users\erick.h.apaza.conde\Desktop\2s2019-t1-master\Exercicio 13\obj\Debug\netcoreapp2.2\Exercicio 13.pdb

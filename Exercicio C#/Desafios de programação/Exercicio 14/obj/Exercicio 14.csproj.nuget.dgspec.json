@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\erick.h.apaza.conde\\Desktop\\2s2019-t1-master\\Exercicio 14\\Exercicio 14.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\erick.h.apaza.conde\\Desktop\\2s2019-t1-master\\Exercicio 14\\Exercicio 14.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\erick.h.apaza.conde\\Desktop\\2s2019-t1-master\\Exercicio 14\\Exercicio 14.csproj",
+        "projectName": "Exercicio 14",
+        "projectPath": "C:\\Users\\erick.h.apaza.conde\\Desktop\\2s2019-t1-master\\Exercicio 14\\Exercicio 14.csproj",
+        "packagesPath": "C:\\Users\\erick.h.apaza.conde\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\erick.h.apaza.conde\\Desktop\\2s2019-t1-master\\Exercicio 14\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\erick.h.apaza.conde\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
