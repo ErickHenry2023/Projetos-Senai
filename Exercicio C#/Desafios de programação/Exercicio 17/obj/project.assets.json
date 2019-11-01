@@ -686,28 +686,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\erick.h.apaza.conde\\.nuget\\packages\\": {},
+    "C:\\Users\\23516467894\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\erick.h.apaza.conde\\Documents\\GitHub\\Projetos-Senai\\Exercicio C#\\Desafios de programação\\Exercicio 17\\Exercicio 17.csproj",
+      "projectUniqueName": "C:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\Desafios de programação\\Exercicio 17\\Exercicio 17.csproj",
       "projectName": "Exercicio 17",
-      "projectPath": "C:\\Users\\erick.h.apaza.conde\\Documents\\GitHub\\Projetos-Senai\\Exercicio C#\\Desafios de programação\\Exercicio 17\\Exercicio 17.csproj",
-      "packagesPath": "C:\\Users\\erick.h.apaza.conde\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\erick.h.apaza.conde\\Documents\\GitHub\\Projetos-Senai\\Exercicio C#\\Desafios de programação\\Exercicio 17\\obj\\",
+      "projectPath": "C:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\Desafios de programação\\Exercicio 17\\Exercicio 17.csproj",
+      "packagesPath": "C:\\Users\\23516467894\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\Desafios de programação\\Exercicio 17\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\erick.h.apaza.conde\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\23516467894\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

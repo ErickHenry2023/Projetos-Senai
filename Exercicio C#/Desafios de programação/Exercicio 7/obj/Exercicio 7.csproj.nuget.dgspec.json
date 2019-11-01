@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\23516467894\\Documents\\Exercicios\\Desafios de programação\\Exercicio 7\\Exercicio 7.csproj": {}
+    "C:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\Desafios de programação\\Exercicio 7\\Exercicio 7.csproj": {}
   },
   "projects": {
-    "C:\\Users\\23516467894\\Documents\\Exercicios\\Desafios de programação\\Exercicio 7\\Exercicio 7.csproj": {
+    "C:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\Desafios de programação\\Exercicio 7\\Exercicio 7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\23516467894\\Documents\\Exercicios\\Desafios de programação\\Exercicio 7\\Exercicio 7.csproj",
+        "projectUniqueName": "C:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\Desafios de programação\\Exercicio 7\\Exercicio 7.csproj",
         "projectName": "Exercicio 7",
-        "projectPath": "C:\\Users\\23516467894\\Documents\\Exercicios\\Desafios de programação\\Exercicio 7\\Exercicio 7.csproj",
+        "projectPath": "C:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\Desafios de programação\\Exercicio 7\\Exercicio 7.csproj",
         "packagesPath": "C:\\Users\\23516467894\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\23516467894\\Documents\\Exercicios\\Desafios de programação\\Exercicio 7\\obj\\",
+        "outputPath": "C:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\Desafios de programação\\Exercicio 7\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,0 +1,11 @@
+C:\Users\23516467894\Documents\Github\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 18\bin\Debug\netcoreapp2.2\Exercicio 18.deps.json
+C:\Users\23516467894\Documents\Github\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 18\bin\Debug\netcoreapp2.2\Exercicio 18.runtimeconfig.json
+C:\Users\23516467894\Documents\Github\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 18\bin\Debug\netcoreapp2.2\Exercicio 18.runtimeconfig.dev.json
+C:\Users\23516467894\Documents\Github\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 18\bin\Debug\netcoreapp2.2\Exercicio 18.dll
+C:\Users\23516467894\Documents\Github\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 18\bin\Debug\netcoreapp2.2\Exercicio 18.pdb
+C:\Users\23516467894\Documents\Github\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 18\obj\Debug\netcoreapp2.2\Exercicio 18.csprojAssemblyReference.cache
+C:\Users\23516467894\Documents\Github\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 18\obj\Debug\netcoreapp2.2\Exercicio 18.csproj.CoreCompileInputs.cache
+C:\Users\23516467894\Documents\Github\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 18\obj\Debug\netcoreapp2.2\Exercicio 18.AssemblyInfoInputs.cache
+C:\Users\23516467894\Documents\Github\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 18\obj\Debug\netcoreapp2.2\Exercicio 18.AssemblyInfo.cs
+C:\Users\23516467894\Documents\Github\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 18\obj\Debug\netcoreapp2.2\Exercicio 18.dll
+C:\Users\23516467894\Documents\Github\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 18\obj\Debug\netcoreapp2.2\Exercicio 18.pdb
