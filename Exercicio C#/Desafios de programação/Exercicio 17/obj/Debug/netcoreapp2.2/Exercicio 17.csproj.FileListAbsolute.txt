@@ -1,0 +1,11 @@
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 17\bin\Debug\netcoreapp2.2\Exercicio 17.deps.json
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 17\bin\Debug\netcoreapp2.2\Exercicio 17.runtimeconfig.json
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 17\bin\Debug\netcoreapp2.2\Exercicio 17.runtimeconfig.dev.json
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 17\bin\Debug\netcoreapp2.2\Exercicio 17.dll
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 17\bin\Debug\netcoreapp2.2\Exercicio 17.pdb
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 17\obj\Debug\netcoreapp2.2\Exercicio 17.csprojAssemblyReference.cache
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 17\obj\Debug\netcoreapp2.2\Exercicio 17.csproj.CoreCompileInputs.cache
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 17\obj\Debug\netcoreapp2.2\Exercicio 17.AssemblyInfoInputs.cache
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 17\obj\Debug\netcoreapp2.2\Exercicio 17.AssemblyInfo.cs
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 17\obj\Debug\netcoreapp2.2\Exercicio 17.dll
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 17\obj\Debug\netcoreapp2.2\Exercicio 17.pdb
