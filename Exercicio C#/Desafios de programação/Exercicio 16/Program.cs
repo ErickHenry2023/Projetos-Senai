@@ -18,11 +18,17 @@ namespace Exercicio16
             double imc = peso/ Math.Pow(alt,2);         /* "Math.Pow(alt,2)" é para elevar um numero por 2  */
             System.Console.WriteLine($"O seu IMC é: {Math.Round(imc, 2).ToString()}");         /*arredondar números decimais "{Math.Round(litros, "2").ToString()}"*/
 
-            if(abaixo de < 20){
-                System.Console.WriteLine($" O seu pesp é abaixo do peso {<imc} ");
-            } else if
+            if(imc < 20){
+                System.Console.WriteLine($" Voce esta abaixo do peso ");
+            } else if( imc <=25)
             {
-                
+                System.Console.WriteLine($" Voce esta com o peso normal ");
+            } else if (imc <=30){
+                System.Console.WriteLine($" Voce esta com o excesso de peso");
+            } else if(imc <=35){
+                System.Console.WriteLine("Voce esta com obesidade");
+            } else if(imc >35){
+                System.Console.WriteLine("Voce esta com obesidade mórbida");
             }
 
         }
