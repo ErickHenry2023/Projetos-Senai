@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     text-align: -webkit-center;
 }
 
@@ -26,6 +26,14 @@
 
 
 /*****************NAV*********************/
+
+/* RESPONSIVEL */
+nav #bt-mobile-menu {
+    display: none;
+}
+/* RESPONSIVEL */
+
+
 nav ul{
     display: flex;
     list-style-type: none;
@@ -36,14 +44,14 @@ nav ul{
 
 nav ul a{
     text-decoration: none;
-    padding: 2em;       /*(((((((((((((((PADDING)))))))))))))*/
+    /*padding: 2em;       /*(((((((((((((((PADDING)))))))))))))*/
     color: #FFCC00;
 }
 
 .menu ul{
     list-style: none;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     display: flex;
     justify-content: space-around;
 }
@@ -51,12 +59,14 @@ nav ul a{
 .menu li a{
     color: #000; /*cor da letra*/
     text-decoration: none;
-    padding: 0.4000em 0.4000em; /*tamanho caixa de menu*/ /*(((((((((((((((PADDING)))))))))))))*/
+    /* height: 40px; */
+    width: 6.25em; /*tamanho caixa de menu*/ /*(((((((((((((((PADDING)))))))))))))*/
     display: block;
     /* border-right: 1px solid #eeffee; */
     border-radius: 40.000em;
     background-color: #7d0093;
     border: 0.15em solid #FFCC00; /* borda menu*/  
+    text-align-last: center;
 }
 
 .menu li a:hover{
@@ -64,7 +74,7 @@ nav ul a{
 }
 
 #logo-area > img{
-    padding: 3em 0 0 0;
+    /* padding: 3em 0 0 0; */
     width: 10%;
 }
 /*****************NAV*********************/
@@ -108,10 +118,11 @@ nav ul a{
 
 /********GALERIA*************/
 ul{
-    width: 75em;
+    /* width: 75em; */
     list-style: none;
     display: flex;
     margin: 6.25em auto;
+    justify-content: center;
 }
 
 .min{
@@ -210,8 +221,9 @@ h1 {
 }
 
 #img-social img{
-    width: 6.25em;
-    height: 5em;
+    width: 40%;
+    height: 40%;
+    margin: 1.875em
 }
 
 .caixa{
@@ -226,8 +238,7 @@ h1 {
 
 .caixa2{
     display: flex;
-    margin-left: 10em;
-    margin-right: 10em;
+    justify-content: space-around;
 }
 
 h1 {
