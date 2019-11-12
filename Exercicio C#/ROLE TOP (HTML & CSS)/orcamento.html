@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rolê Top</title>
+    <link href="logo.png" rel="icon" type="image/x-icon" />
+    <link href="style-orcamento.css" rel="stylesheet" type="text/css">
+    
+    <title>Orçamentos</title>
+</head>
+
+<body>
+    
+    <div id="topo">
+        
+        <div>
+            <p>USUARIO</p>
+        </div>
+        
+        <img src="logo.png" alt="logo" title="role top" class="logo">
+    </div>
+    
+    
+    
+    <div id="tabela">
+        
+        <form>
+            
+            <p><label for="cNome">Nome:</label>
+                <input type="text" name="tName" id=cNome size="20" maxlength="30" placeholder="Nome Completo" /></p>
+                <p><label for="cMail">E-mail:</label>
+                    <input type="email" name="tMail>" id=cMail size="20" maxlength="40" /></p>
+                    <p><label for="cTel">Telefone:</label>
+                        <input type="tel" name="tTel" id=cTel size="12" maxlength="12" placeholder="(11) 91234-5678" /></p>
+                        <p><label for="cNome">Data:</label>
+                            <input type="date" name="tData" id=CData /></p>
+                            
+                            <label for="cTEvento"> Tipo do evento:</label>
+                            <select type="text" name="tTEvento" id="cTEvento">
+                                <option>Casamento</option>
+                                <option>Aniversario</option>
+                                <option>Corporativo</option>
+                                <option>Debutante</option>
+                                <option>Bodas</option>
+                                <option>Outros</option>
+                            </select>
+                            
+                            <p><label for="cNome">Adicionais:</label>
+                                
+                                <input type="radio" name="tadicionais" id="cSom" /> <label for="cSom">Som</label>
+                                <input type="radio" name="tadicionais" id="cIluminação" /> <label for="ciluminação">Iluminação</label>
+                                <input type="radio" name="tadicionais" id="cNenhuma" /> <label for="cNenhuma">Nenhuma</label></p>
+                                
+                                <label for="cFormadepagamento"> Forma de pagamento:</label>
+                                <select type="text" name="tcFormadepagamento" id="cFormadepagamento">
+                                    <option>Dinheiro</option>
+                                    <option>Boleto bancário</option>
+                                    <option>Cartão de crédito</option>
+                                    <option>Cartão de débito</option>
+                                    <option>Cheque</option>
+                                </select>
+                                
+                                <p><label for="cNome">Sobre o Evento:</label>
+                                    <textarea name="tMsg" id=cMsg cols="45" rows="5" placeholder="DESCRIÇÃO DO EVENTO"></textarea></p>
+                                    
+                                    <input type="submit" name="Enviar" value="Enviar">
+                                    
+                                    
+                                </form>
+                            </div>
+                            
+                        </body>
+                        
+                        </html>
