@@ -9,3 +9,14 @@ C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 19
 C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 19\obj\Debug\netcoreapp2.2\Exercicio 19.AssemblyInfo.cs
 C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 19\obj\Debug\netcoreapp2.2\Exercicio 19.dll
 C:\Users\23516467894\Documents\Exercicios\Desafios de programação\Exercicio 19\obj\Debug\netcoreapp2.2\Exercicio 19.pdb
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 19\bin\Debug\netcoreapp2.2\Exercicio 19.deps.json
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 19\bin\Debug\netcoreapp2.2\Exercicio 19.runtimeconfig.json
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 19\bin\Debug\netcoreapp2.2\Exercicio 19.runtimeconfig.dev.json
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 19\bin\Debug\netcoreapp2.2\Exercicio 19.dll
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 19\bin\Debug\netcoreapp2.2\Exercicio 19.pdb
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 19\obj\Debug\netcoreapp2.2\Exercicio 19.csprojAssemblyReference.cache
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 19\obj\Debug\netcoreapp2.2\Exercicio 19.csproj.CoreCompileInputs.cache
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 19\obj\Debug\netcoreapp2.2\Exercicio 19.AssemblyInfoInputs.cache
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 19\obj\Debug\netcoreapp2.2\Exercicio 19.AssemblyInfo.cs
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 19\obj\Debug\netcoreapp2.2\Exercicio 19.dll
+C:\Users\erick.h.apaza.conde\Documents\GitHub\Projetos-Senai\Exercicio C#\Desafios de programação\Exercicio 19\obj\Debug\netcoreapp2.2\Exercicio 19.pdb
