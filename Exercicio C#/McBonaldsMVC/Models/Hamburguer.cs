@@ -7,5 +7,10 @@ namespace McBonaldsMVC.Models
             this.Nome =nome;
             this.Preco = preco;
         }
+
+        public Hamburguer ()
+        {
+            
+        }
     }
 }

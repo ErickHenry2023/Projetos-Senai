@@ -5,7 +5,7 @@ namespace McBonaldsMVC.Repositories
 {
     public class ClienteRepository
     {
-        private const string PATH = "Database/Cliente.csv";     /*"PATH" Constantia  */
+        private const string PATH = "Database/Cliente.csv";     /*"PATH" Constantia  */         /*Apenas leitura sem modificar "const" */
 
         public ClienteRepository()
         {
@@ -17,7 +17,7 @@ namespace McBonaldsMVC.Repositories
 
         public bool Inserir(Cliente cliente)
         {
-            var linha = new string[] {PrepararRegistroCSV(cliente)};
+            var linha = new string[] {PrepararRegistroCSV(cliente)};    
             File.AppendAllLines(PATH, linha);
 
             return true;
