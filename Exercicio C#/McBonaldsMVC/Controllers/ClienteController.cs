@@ -1,4 +1,5 @@
 using System;
+using McBonaldsMVC.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,6 +7,7 @@ namespace McBonaldsMVC.Controllers
 {
     public class ClienteController : Controller
     {
+        private ClienteRepository clienteRepository = new ClienteRepository();
         [HttpGet]
         public IActionResult Login()       /*IActionResult  para mostrar a pag "return View();"*/
         {
@@ -23,8 +25,12 @@ namespace McBonaldsMVC.Controllers
                 System.Console.WriteLine(form["senha"]);
                 System.Console.WriteLine("=================");
 
-                return View("Sucesso");
+                var usuario = (form["email"]);                  /*P/ hacer login del usuario */
+                var senha = (form["senha"]);
 
+                var cliente = clienteRepository.ObterPor(usuario);
+
+                return View("Sucesso");
             }
             catch (Exception e)
             {

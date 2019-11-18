@@ -7,6 +7,8 @@ namespace McBonaldsMVC.ViewModels
     {
         public List<Hamburguer> Hamburgueres {get; set;}
 
+        public List<Shake> Shakes {get; set;}
+
         // public PedidoViewModel()
         // {
         //     this.Hamburgueres = new List<Hamburguer>();

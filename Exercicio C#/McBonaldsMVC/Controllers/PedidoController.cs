@@ -12,10 +12,13 @@ namespace McBonaldsMVC.Controllers
         PedidoRepository pedidoRepository = new PedidoRepository();
 
         HamburguerRepository hamburguerRepository = new HamburguerRepository();     /*Preco dos hamburguer */
+
+        ShakeRepository shakeRepository = new ShakeRepository();                    /*Preco dos shake */
         public IActionResult Index()
         {
             PedidoViewModel pvm = new PedidoViewModel();
-           pvm.Hamburgueres = hamburguerRepository.ObterTodos();          /*devolver lista */
+           pvm.Hamburgueres = hamburguerRepository.ObterTodos();        /*devolver lista */
+            pvm.Shakes = shakeRepository.ObterTodos();
             return View(pvm);
         }
 
@@ -25,16 +28,27 @@ namespace McBonaldsMVC.Controllers
 
                 Pedido pedido = new Pedido();
 
-                Shake shake = new Shake();
-                shake.Nome = form["shake"];
-                shake.Preco = 0.0;
+                // Shake shake = new Shake();
+                // shake.Nome = form["shake"];
+                // shake.Preco = 0.0;
                 
-                pedido.Shake = shake;
+                // pedido.Shake = shake;
 
-                Hamburguer hamburguer = new Hamburguer (form["hamburguer"], 0.0);      /*Parou AQUI */
+                var nomeHamburguer = form["hamburguer"];                /*Para pegar o preço do produto */
+                Hamburguer hamburguer = new Hamburguer(
+                    nomeHamburguer, 
+                    hamburguerRepository.ObterPrecode(nomeHamburguer));
+
                 pedido.Hamburguer = hamburguer;
                 // hamburguer.Nome = form["hamburguer"];
                 // hamburguer.Preco = 0.0;
+
+                var nomeShake = form["shake"];                /*Para pegar o preço do produto */
+                Shake shake = new Shake(
+                    nomeShake, 
+                    shakeRepository.ObterPrecode(nomeShake));
+                    
+                pedido.Shake = shake;
 
                 Cliente cliente = new Cliente(){
 
@@ -48,7 +62,7 @@ namespace McBonaldsMVC.Controllers
 
                 pedido.DateDoPedido = DateTime.Now;
 
-                pedido.PrecoTotal = 0.0; 
+                pedido.PrecoTotal = hamburguer.Preco + shake.Preco; 
 
                 if (pedidoRepository.Inserir(pedido)) {
                     return View("Sucesso");

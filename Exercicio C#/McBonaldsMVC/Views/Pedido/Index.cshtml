@@ -28,7 +28,7 @@
 
             <div class="double-field">
                 <div>
-                    <label for="hamburguer">Hamburguer</label>
+                    <label for="hamburguer">Hamburguer</label>                                      <!--Para hacer un lista de pedidos -->
                     <select id="hamburguer" name = "hamburguer" required>
                         <option value="" disabled selected>Selecione</option>
                         <!-- <option value="furioso">Furioso</option> -->
@@ -43,8 +43,12 @@
                     <label for="shake">Shake</label>
                     <select id="shake" name = "shake">
                         <option value="" disabled selected>Selecione</option>
-                        <option value = "chocolate"> Chocolate</option>
-                        <option value = "biscoito"> Biscoito</option>          
+                        @foreach (var shake in Model.Shakes)
+                        {
+                            <option value=@shake.Nome>@shake.Nome por @shake.Preco</option>
+                        }
+                        <!-- <option value = "chocolate"> Chocolate</option>
+                        <option value = "biscoito"> Biscoito</option>           -->
                     </select>
                 </div>
             </div>
