@@ -4,7 +4,7 @@ using McBonaldsMVC.Models;
 
 namespace McBonaldsMVC.Repositories
 {
-    public class ClienteRepository
+    public class ClienteRepository : RepositoryBase
     {
         private const string PATH = "Database/Cliente.csv";     /*"PATH" Constantia  */         /*Apenas leitura sem modificar "const" */
 
@@ -45,29 +45,11 @@ namespace McBonaldsMVC.Repositories
             return null; 
         }
 
-        private string ExtrairValorDoCampo(string nomeCampo, string linha)      /*P/ hacer login del usuario */
-        {
-            var chave = nomeCampo;
-            var indiceChave = linha.IndexOf(chave);                 /*IndexOf = pega o endereço da "string" do CSV  */
 
-            var indiceTerminal = linha.IndexOf(";", indiceChave);
-
-            var valor = "";
-
-            if(indiceTerminal != -1){
-                valor = linha.Substring(indiceChave, indiceTerminal - indiceChave);
-            }
-            else
-            {
-                valor = linha.Substring(indiceChave);
-            }
-            System.Console.WriteLine($"Campo: {nomeCampo} e valor {valor}");
-            return valor.Replace(nomeCampo + "=","");
-        }
 
         private string PrepararRegistroCSV(Cliente cliente)
         {
-            return $"nome={cliente.Nome}; email={cliente.Email};senha ={cliente.Senha};endereco={cliente.Endereco};telefone={cliente.Telefone}; data_nascimento={cliente.DataNascimento}";
+            return $"nome={cliente.Nome}; email={cliente.Email};senha={cliente.Senha};endereco={cliente.Endereco};telefone={cliente.Telefone}; data_nascimento={cliente.DataNascimento}";
         }
     }
 }
