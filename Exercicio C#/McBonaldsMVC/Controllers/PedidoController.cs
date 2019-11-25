@@ -29,6 +29,10 @@ namespace McBonaldsMVC.Controllers {
             if (!string.IsNullOrEmpty (nomeUsuario)) {
                 pvm.NomeCliente = nomeUsuario;
             }
+            
+            pvm.NomeView = "Pedido";
+            pvm.UsuarioEmail = ObterUsuarioSession();
+            pvm.UsuarioNome = ObterUsuarioNomeSession();
 
             // clienteRepository.ObterPor();
 
