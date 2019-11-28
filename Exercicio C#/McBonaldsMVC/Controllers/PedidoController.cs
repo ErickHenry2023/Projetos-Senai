@@ -81,11 +81,19 @@ namespace McBonaldsMVC.Controllers {
             pedido.PrecoTotal = hamburguer.Preco + shake.Preco;
 
             if (pedidoRepository.Inserir (pedido)) {
-                return View ("Sucesso");
+                return View ("Sucesso", new RespostaViewModels("Sucesso") {
+                    NomeView = "Cadastro",
+                    UsuarioNome = ObterUsuarioNomeSession(),
+                    UsuarioEmail = ObterUsuarioSession()
+                });
 
             } else {
-                return View ("Erro");
-            }
+                return View ("Sucesso", new RespostaViewModels("Erro") {
+                    NomeView = "Cadastro",
+                    UsuarioNome = ObterUsuarioNomeSession(),
+                    UsuarioEmail = ObterUsuarioSession()
+                });
         }
     }
+}
 }

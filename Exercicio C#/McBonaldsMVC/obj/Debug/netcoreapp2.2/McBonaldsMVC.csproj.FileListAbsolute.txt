@@ -35,3 +35,4 @@ C:\Users\23516467894\Documents\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\R
 C:\Users\23516467894\Documents\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Pedido\Index.g.cshtml.cs
 C:\Users\23516467894\Documents\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Historico.g.cshtml.cs
 C:\Users\23516467894\Documents\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Erro.g.cshtml.cs
+C:\Users\23516467894\Documents\Exercicios\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\Dashboard.g.cshtml.cs

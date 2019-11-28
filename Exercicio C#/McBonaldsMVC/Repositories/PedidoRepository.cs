@@ -19,6 +19,8 @@ namespace McBonaldsMVC.Repositories
 
         public bool Inserir(Pedido pedidio)
         {
+            var quantidadePedidos = File.ReadAllLines(PATH).Length;         /*Devolve o tamanho do vector "Length" */
+            pedidio.Id = (ulong) ++quantidadePedidos;
             var linha = new string[] {PrepararPedidoCSV(pedidio)};    
             File.AppendAllLines(PATH, linha);                   /*"AppendAllLines"= Acrescenta (CVS)linhas a um arquivo e fecha o arquivo */
 
@@ -47,8 +49,11 @@ namespace McBonaldsMVC.Repositories
             foreach (var linha in linhas)
             {
                 Pedido pedido = new Pedido();
-                pedido.Cliente = new Cliente();
+                // pedido.Cliente = new Cliente();
                 
+                pedido.Id= ulong.Parse(ExtrairValorDoCampo("id", linha));
+                pedido.Status =uint.Parse(ExtrairValorDoCampo("status_pedido", linha)); /*28/11 */
+
                 pedido.Cliente.Nome = ExtrairValorDoCampo("nome", linha);
                 pedido.Cliente.Endereco = ExtrairValorDoCampo("endereco", linha);
                 pedido.Cliente.Telefone = ExtrairValorDoCampo("telefone", linha);
@@ -69,16 +74,13 @@ namespace McBonaldsMVC.Repositories
             
             return pedidos;
         }
-
-        
-            private string PrepararPedidoCSV(Pedido pedido)
-
+            private string PrepararPedidoCSV(Pedido pedido)         /*gravar no banco "PrepararPedidoCSV" */
         {
             Cliente c = pedido.Cliente;
             Hamburguer h = pedido.Hamburguer;
             Shake s = pedido.Shake;
 
-            return $"nome={c.Nome};endereco={c.Endereco};telefone={c.Telefone};email={c.Email};hamburguer_nome={h.Nome};hamburguer_preco={h.Preco};shake_nome={s.Nome};shake_preco={s.Preco};data_pedido={pedido.DateDoPedido};preco_total={pedido.PrecoTotal};";
+            return $"id={pedido.Id};status_pedido={pedido.Status};nome={c.Nome};endereco={c.Endereco};telefone={c.Telefone};email={c.Email};hamburguer_nome={h.Nome};hamburguer_preco={h.Preco};shake_nome={s.Nome};shake_preco={s.Preco};data_pedido={pedido.DateDoPedido};preco_total={pedido.PrecoTotal};";
             
         }
     }

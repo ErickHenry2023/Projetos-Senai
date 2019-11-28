@@ -1,6 +1,6 @@
 namespace McBonaldsMVC.ViewModels               /*crio o arquivo */
 {
-    public class RespostaViewModels
+    public class RespostaViewModels : BaseViewModel
     {
         public string Mensagem {get; set;}
 
@@ -8,6 +8,8 @@ namespace McBonaldsMVC.ViewModels               /*crio o arquivo */
         {
 
         }
+
+        
 
         public RespostaViewModels(string mensagem)
         {
