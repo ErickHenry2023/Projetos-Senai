@@ -8,9 +8,17 @@ namespace McBonaldsMVC.Controllers              /*28/11 p/ dashborad */
     public class AdministradorController : AbstractController
     {
         PedidoRepository pedidoRepository = new PedidoRepository();
-        public IActionResult Dashboard()
+        public IActionResult Dashboard(){
 
-        {
+            var ninguemLogado = string.IsNullOrEmpty(ObterUsuarioTipoSession());
+
+            if (!ninguemLogado && 
+            (uint) TipoUsuario.ADMINISTRADOR == uint.Parse(ObterUsuarioTipoSession())){
+
+            
+
+            
+
             var pedidos = pedidoRepository.ObterTodos();
             DashboardViewModel dashboardViewModel = new DashboardViewModel();
 
@@ -38,6 +46,14 @@ namespace McBonaldsMVC.Controllers              /*28/11 p/ dashborad */
 
 
             return View(dashboardViewModel);
+            }
+            else
+            {
+                return View ("Erro", new RespostaViewModels(){
+                    NomeView = "Dashboard",
+                    Mensagem = "Voce nao tem permissao para acessar o Dashboard"
+                });
+            }
         }
     }
 }

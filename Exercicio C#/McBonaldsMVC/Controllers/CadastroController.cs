@@ -1,4 +1,5 @@
 using System;
+using McBonaldsMVC.Enums;
 using McBonaldsMVC.Models;
 using McBonaldsMVC.Repositories;
 using McBonaldsMVC.ViewModels;
@@ -30,7 +31,9 @@ namespace McBonaldsMVC.Controllers
             try
             {
                 Cliente cliente = new Cliente(form ["nome"], form["endereco"], form["telefone"], form["senha"], form["email"], DateTime.Parse(form["data-nascimento"]));
-            
+
+                cliente.TipoUsuario = (uint) TipoUsuario.CLIENTE;
+
                 clienteRepository.Inserir(cliente);
                 return View("Sucesso", new RespostaViewModels()
                 {
@@ -43,7 +46,7 @@ namespace McBonaldsMVC.Controllers
             catch(Exception e)
             {
                 System.Console.WriteLine(e.StackTrace);     /*p/  tirar o erro "e" */
-               return View("Erro", new RespostaViewModels()
+            return View("Erro", new RespostaViewModels()
                 {
                     NomeView = "Cadasto",
                     UsuarioEmail = ObterUsuarioSession(),

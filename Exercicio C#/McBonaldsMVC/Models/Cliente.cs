@@ -13,6 +13,9 @@ namespace McBonaldsMVC.Models
         public DateTime DataNascimento {get; set;}
         public object DataNasciment { get; internal set; }
 
+        public uint TipoUsuario {get; set;}
+        
+
         public Cliente()
         {
             

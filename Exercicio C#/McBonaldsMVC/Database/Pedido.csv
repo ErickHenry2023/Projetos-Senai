@@ -1,1 +1,2 @@
-id=5;status_pedido=0;nome=Sou eu;endereco=Av.rua;telefone=12111112111;email=eu@hotmail.com;hamburguer_nome=Combo da Hora;hamburguer_preco=19,99;shake_nome=Morango;shake_preco=19,99;data_pedido=28/11/2019 17:41:47;preco_total=39,98;
+id=1;status_pedido=1;nome=Sou eu;endereco=Av.rua;telefone=12111112111;email=admin@hotmail.com;hamburguer_nome=Morango;hamburguer_preco=12,99;shake_nome=Black Burguer;shake_preco=19,99;data_pedido=29/11/2019 17:45:01;preco_total=32,98;
+id=2;status_pedido=2;nome=Ele;endereco=Av.R;telefone=987654321;email=eu@hotmail.com;hamburguer_nome=Morango;hamburguer_preco=19,99;shake_nome=Combo da Hora;shake_preco=19,99;data_pedido=29/11/2019 17:46:01;preco_total=39,98;
