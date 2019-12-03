@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
- /*******************TOPO/*******************/
+/*******************TOPO/*******************/
 #topo {
     width: 100%;
     height: 3em;
@@ -21,10 +21,10 @@
     text-align: left;
 
 }
- /*******************TOPO*******************/
+/*******************TOPO*******************/
 
- /*******************NAV********************/
- .menu li a{
+/*******************NAV********************/
+.menu li a{
     color: #000; /*cor da letra*/
     text-decoration: none;
     padding: 7px 7px; /*tamanho caixa de menu*/

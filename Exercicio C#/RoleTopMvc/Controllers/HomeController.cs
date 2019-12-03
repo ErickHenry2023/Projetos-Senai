@@ -20,5 +20,10 @@ namespace RoleTopMvc.Controllers
                 UsuarioNome = ObterUsuarioNomeSession()
             });
         }
+
+        // public IActionResult Privacy()
+        // {
+        //     return View();
+        // }
     }
 }

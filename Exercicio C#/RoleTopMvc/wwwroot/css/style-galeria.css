@@ -5,80 +5,16 @@
     justify-content: space-between;
 }
 
-/*****************TOPO********************/
-#topo {
-    width: 100%;
-    height: 9.000em;
-    background-color: #7d0093;
-}
+/* ****************TOPO********************/
 
-#topo > img{
-    width: 9.000em;
-    height: 7.000em;
-}
-
-#topo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 /*****************TOPO********************/
 
 
 
 /*****************NAV*********************/
 
-/* RESPONSIVEL */
-nav #bt-mobile-menu {
-    display: none;
-}
-/* RESPONSIVEL */
 
-
-nav ul{
-    display: flex;
-    list-style-type: none;
-    background-color: none;  /*cor menu*/
-    font-size: 1.7em;
-    align-items: center;
-}
-
-nav ul a{
-    text-decoration: none;
-    /*padding: 2em;       /*(((((((((((((((PADDING)))))))))))))*/
-    color: #FFCC00;
-}
-
-.menu ul{
-    list-style: none;
-    margin: 0;
-    /* padding: 0; */
-    display: flex;
-    justify-content: space-around;
-}
-
-.menu li a{
-    color: #000; /*cor da letra*/
-    text-decoration: none;
-    /* height: 40px; */
-    width: 6.25em; /*tamanho caixa de menu*/ /*(((((((((((((((PADDING)))))))))))))*/
-    display: block;
-    /* border-right: 1px solid #eeffee; */
-    border-radius: 40.000em;
-    background-color: #7d0093;
-    border: 0.15em solid #FFCC00; /* borda menu*/  
-    text-align-last: center;
-}
-
-.menu li a:hover{
-    background-color: #FF9933;  /*cor do fundo menu*/
-}
-
-#logo-area > img{
-    /* padding: 3em 0 0 0; */
-    width: 10%;
-}
-/*****************NAV*********************/
+/*****************NAV******************** */
 
 
 

@@ -7,7 +7,6 @@ namespace RoleTopMvc.Controllers
     {
         protected const string SESSION_CLIENTE_EMAIL = "email_cliente";
         protected const string SESSION_CLIENTE_NOME = "nome_cliente";
-
         protected const string SESSION_CLIENTE_TIPO = "cliente_tipo";
 
         protected string ObterUsuarioSession()
