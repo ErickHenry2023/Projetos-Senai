@@ -32,7 +32,12 @@ namespace McBonaldsMVC
             });
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);            /*para derubar a pessoa da sessao */
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(15);
+                options.Cookie.IsEssential = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +57,7 @@ namespace McBonaldsMVC
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseSession();
 
             app.UseMvc(routes =>        /* A rota padrao, o faço quando o meu endereço e accesado "{controller=Home}/{action=Index}" = (metodo) */
             {
