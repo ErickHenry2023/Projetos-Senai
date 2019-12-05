@@ -2976,6 +2976,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\RoleTopMvc\\Views\\Shared\\_Footer.cshtml",
+      "TargetPath": "Views\\Shared\\_Footer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\RoleTopMvc\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -2983,6 +2988,11 @@
     {
       "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\RoleTopMvc\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\RoleTopMvc\\Views\\Shared\\_Nav.cshtml",
+      "TargetPath": "Views\\Shared\\_Nav.cshtml",
       "FileKind": "mvc"
     },
     {

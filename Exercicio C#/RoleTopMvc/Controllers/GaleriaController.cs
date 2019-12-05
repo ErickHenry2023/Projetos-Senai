@@ -7,7 +7,8 @@ namespace RoleTopMvc.Controllers
     {
         public IActionResult Index()
         {
-            
+            ViewData["Footer"] = "foot";
+            ViewData["Nav"] = "nav";
             return View(new BaseViewModels()
             {
                 NomeView = "Galeria",

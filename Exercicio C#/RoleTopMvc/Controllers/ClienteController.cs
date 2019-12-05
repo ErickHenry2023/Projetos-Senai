@@ -13,6 +13,9 @@ namespace RoleTopMvc.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["Footer"] = "";
+            ViewData["Nav"] = "";
+
             return View(new BaseViewModels()
             {
                 NomeView = "Cliente",
