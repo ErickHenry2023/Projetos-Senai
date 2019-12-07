@@ -1,0 +1,23 @@
+<nav class="menu">
+            <ul>
+
+                <!---------------RESPONSIVEL--------------->
+                <li id="bt-mobile-menu">
+                    <!-- HTML para colocar os ícones do FA -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+
+
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Home</a>
+                </li>
+                <!-- <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Rolê Top</a> </li> -->
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Galeria" asp-action="Index">Galeria</a> </li>
+                <!-- <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="#">Faq</a> </li> -->
+                <div id="login-area">
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Index">Login</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cadastro" asp-action="Index">Cadastrar</a></li>
+                </div>
+            </ul>
+        </nav>

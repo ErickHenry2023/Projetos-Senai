@@ -66,3 +66,5 @@ C:\Users\23516467894\Documents\Exercicios\RoleTopMvc\obj\Debug\netcoreapp2.2\Rol
 C:\Users\23516467894\Documents\Exercicios\RoleTopMvc\obj\Debug\netcoreapp2.2\RoleTopMvc.dll
 C:\Users\23516467894\Documents\Exercicios\RoleTopMvc\obj\Debug\netcoreapp2.2\RoleTopMvc.pdb
 C:\Users\23516467894\Documents\Exercicios\RoleTopMvc\obj\Debug\netcoreapp2.2\RoleTopMvc.csproj.CopyComplete
+C:\Users\23516467894\Documents\Exercicios\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Footer.g.cshtml.cs
+C:\Users\23516467894\Documents\Exercicios\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Nav.g.cshtml.cs

@@ -1,5 +1,10 @@
 ﻿@model RoleTopMvc.ViewModels.BaseViewModels;
 
+@{
+    var nav= (string) ViewData ["Nav"];
+    var foot= (string) ViewData ["Footer"];
+}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,7 +15,7 @@
     <title>Rolê Top</title>
     <link href="" rel="icon" type="image/x-icon" />
 
-    <link rel="stylesheet" href="~/css/style-barradenav.css">
+    <link rel="stylesheet" href="~/css/style-barradenav.css"> 
 
     <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
     <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
@@ -49,33 +54,22 @@
 
 
     <div id="topo">
-        <img src="img/logo.png" alt="logo" title="role top">
+        <a href='@Url.Action("Index", "Home" )'> <img src="img/logo.png" alt="logo" title="HOME"> </a>
     </div>
 
+    
+    @if("nav".Equals(nav)){
+        Html.RenderPartial("_Nav");
+        <link rel="stylesheet" href="~/css/style.css">;
+    }
+
+
     <header>
-        <nav class="menu">
+        <!-- <nav class="menu">
             <ul>
 
                 <!---------------RESPONSIVEL--------------->
-                <li id="bt-mobile-menu">
-                    <!-- HTML para colocar os ícones do FA -->
-                    <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
-
-
-                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Home</a>
-                </li>
-                <!-- <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Rolê Top</a> </li> -->
-                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Galeria" asp-action="Index">Galeria</a> </li>
-                <!-- <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="#">Faq</a> </li> -->
-                <div id="login-area">
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Index">Login</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cadastro" asp-action="Index">Cadastrar</a></li>
-                </div>
-            </ul>
-        </nav>
+            
 
         <!---------------RESPONSIVEL--------------->
 
@@ -87,8 +81,13 @@
 
 @RenderBody()
 
+    @if("foot".Equals(foot)){
+        Html.RenderPartial("_Footer");
+        <link rel="stylesheet" href="~/css/style.css">;
+    }
 
-    <footer>
+
+    <!-- <footer>
         <address>
             Endereço: Rua Alameda Barão de Limeira, 539 - Santa Cecilia, São Paulo -SP, 01202-001
             <br>
@@ -141,7 +140,7 @@
 
 
 
-    </footer>
+    </footer> -->
 
 
     <!---------------JAVA S INICIO--------------->
@@ -279,9 +278,6 @@
     </script>
 
     <!---------------RESPONSIVEL--------------->
-
-
-
 
 </body>
 

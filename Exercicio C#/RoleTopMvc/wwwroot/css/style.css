@@ -216,7 +216,8 @@ footer{
 
 .icone > *{
 
-    height: 1.666em
+    height: 1.666em;
+    display: flex;
     /* padding:  0.5em; */
 }
 /************RODAPE*************/

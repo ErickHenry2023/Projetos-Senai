@@ -1,0 +1,12 @@
+using System.Collections.Generic;
+using RoleTopMvc.Models;
+
+namespace RoleTopMvc.ViewModels
+{
+    public class HistoricoViewModel : BaseViewModels
+    {
+    
+        public List<Evento> Eventos {get; set;}
+        
+    }
+}
