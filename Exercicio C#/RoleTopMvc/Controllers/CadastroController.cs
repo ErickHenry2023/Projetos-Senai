@@ -38,7 +38,7 @@ namespace RoleTopMvc.Controllers
 
             try
             {
-                Cliente cliente = new Cliente(form ["nome"], form["email"], form["senha"], form["cpf"], form["telefone"]);
+                Cliente cliente = new Cliente(form ["nome"], form["endereco"], form["telefone"], form["senha"], form["email"], DateTime.Parse(form["data-nascimento"]));
 
                 cliente.TipoUsuario = (uint) TipoUsuario.CLIENTE;
 

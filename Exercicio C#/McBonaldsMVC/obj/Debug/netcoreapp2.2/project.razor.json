@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\McBonaldsMVC.csproj",
+  "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\McBonaldsMVC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,83 +2961,88 @@
   "RootNamespace": "McBonaldsMVC",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Erro.cshtml",
-      "TargetPath": "Views\\Erro.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Shared\\Sucesso.cshtml",
-      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Pedido\\Index.cshtml",
-      "TargetPath": "Views\\Pedido\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Cliente\\Login.cshtml",
-      "TargetPath": "Views\\Cliente\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Cliente\\Historico.cshtml",
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Cliente\\Historico.cshtml",
       "TargetPath": "Views\\Cliente\\Historico.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Shared\\_HeaderHomePage.cshtml",
-      "TargetPath": "Views\\Shared\\_HeaderHomePage.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Administrador\\Dashboard.cshtml",
-      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Cadastro\\Index.cshtml",
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Cadastro\\Index.cshtml",
       "TargetPath": "Views\\Cadastro\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Cliente\\Login.cshtml",
+      "TargetPath": "Views\\Cliente\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Shared\\Erro.cshtml",
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Shared\\Erro.cshtml",
       "TargetPath": "Views\\Shared\\Erro.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\23516467894\\Documents\\Exercicios\\McBonaldsMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Pedido\\Index.cshtml",
+      "TargetPath": "Views\\Pedido\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Administrador\\Dashboard.cshtml",
+      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Shared\\Sucesso.cshtml",
+      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Shared\\_HeaderHomePage.cshtml",
+      "TargetPath": "Views\\Shared\\_HeaderHomePage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Erro.cshtml",
+      "TargetPath": "Views\\Erro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23516467894\\Documents\\Github\\Projetos-Senai\\Exercicio C#\\McBonaldsMVC\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     }
   ],

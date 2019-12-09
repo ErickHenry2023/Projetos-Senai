@@ -28,7 +28,6 @@ namespace RoleTopMvc.Controllers
                 UsuarioEmail = ObterUsuarioSession(),
                 UsuarioNome = ObterUsuarioNomeSession()
             });
-        }
 
             [HttpPost]
         public IActionResult Login(IFormCollection form)
@@ -97,11 +96,11 @@ namespace RoleTopMvc.Controllers
         public IActionResult Historico ()                                               /*Foi criado 21/11 hacer login */
         {
             var emailCliente = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
-            var eventosCliente = agentamentoRepository.ObterTodosPorCliente(emailCliente);
+            var pedidosCliente = agentamentoRepository.ObterTodosPorCliente(emailCliente);
 
             return View(new HistoricoViewModel()
             {
-                Eventos = eventosCliente,
+                Pedidos = pedidosCliente,
                 NomeView = "Historico",
                 UsuarioEmail = ObterUsuarioSession(),
                 UsuarioNome = ObterUsuarioNomeSession()
@@ -114,6 +113,6 @@ namespace RoleTopMvc.Controllers
             HttpContext.Session.Clear();             /*P/ encerrar a sessao */
             return RedirectToAction("Index", "Home");
         }
-        
+        }
     }
 }

@@ -1,11 +1,14 @@
 using System;
+using Microsoft.AspNetCore.Mvc;
+using RoleTopMvc.Enums;
+using RoleTopMvc.Repositories;
 using RoleTopMvc.ViewModels;
 
 namespace RoleTopMvc.Controllers
 {
-    public class AdministradorController
+    public class AdministradorController : AbstractController
     {
-        PedidoRepository pedidoRepository = new PedidoRepository();
+        AgendamentoRepository agendamentoRepository = new AgendamentoRepository();
         public IActionResult Dashboard(){
 
             var ninguemLogado = string.IsNullOrEmpty(ObterUsuarioTipoSession());
@@ -17,23 +20,23 @@ namespace RoleTopMvc.Controllers
 
             
 
-            var pedidos = pedidoRepository.ObterTodos();
+            var agendamento = agendamentoRepository.ObterTodos();
             DashboardViewModel dashboardViewModel = new DashboardViewModel();
 
-            foreach(var pedido in pedidos)
+            foreach(var pedido in agendamento)
             {
                 switch(pedido.Status)
                 {
-                    case (uint) StatusPedido.APROVADO:
-                        dashboardViewModel.PedidosAprovados++;
+                    case (uint) StatusEvento.APROVADO:
+                        dashboardViewModel.EventosAprovados++;
                     break;
                         
-                    case (uint) StatusPedido.REPROVADO:
-                        dashboardViewModel.PedidosReprovados++;
+                    case (uint) StatusEvento.REPROVADO:
+                        dashboardViewModel.EventosReprovados++;  /*trocar por evento/agendamento */
                     break;
                     default:
-                        dashboardViewModel.PedidosPendentes++;      
-                        dashboardViewModel.Pedidos.Add(pedido);
+                        dashboardViewModel.EventosPendentes++;      
+                        dashboardViewModel.Eventos.Add(pedido);
                     break;
 
                 }
