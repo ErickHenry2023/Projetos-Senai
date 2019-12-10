@@ -37,109 +37,111 @@ namespace RoleTopMvc.Controllers
 
             return View (evm);
         }
+            /*hacer esta parte */
 
-        public IActionResult Registrar (IFormCollection form) {
-            ViewData["Action"] = "Orcamento";
+    //         public IActionResult Registrar (IFormCollection form) {
+    //         ViewData["Action"] = "Orcamento";
 
-            Evento evento = new Evento ();
+    //         Evento evento = new Evento ();
 
-            // Shake shake = new Shake();
-            // shake.Nome = form["shake"];
-            // shake.Preco = 0.0;
+    //         // Shake shake = new Shake();
+    //         // shake.Nome = form["shake"];
+    //         // shake.Preco = 0.0;
 
-            // pedido.Shake = shake;
+    //         // pedido.Shake = shake;
 
-            List<Servico> servicos = new List<Servico>();               /*PAREI AQUI */
+    //         List<Servico> servicos = new List<Servico>();               /*PAREI AQUI */
 
-            string[] nomesServicos = form["tadicionais"].ToString().Split(",");
+    //         string[] nomesServicos = form["tadicionais"].ToString().Split(",");
 
-            foreach (var nomeservico in nomesServicos)
-            {
-                servicos.Add(new Servico(nomeServico, servicoRepositorio.ObterPrecoDe(nomeServico)));
-            }
+    //         foreach (var nomeservico in nomesServicos)
+    //         {
+    //             servicos.Add(new Servico(nomeServico, servicoRepositorio.ObterPrecoDe(nomeServico)));
+    //         }
 
-            Servico servico = new Servico (
-                nomeServico,
-                servicoRepository.ObterPrecode (nomeServico));
+    //         Servico servico = new Servico (
+    //             nomeServico,
+    //             servicoRepository.ObterPrecode (nomeServico));
 
-            pedido.Hamburguer = hamburguer;
-            // hamburguer.Nome = form["hamburguer"];
-            // hamburguer.Preco = 0.0;
+    //         pedido.Hamburguer = hamburguer;
+    //         // hamburguer.Nome = form["hamburguer"];
+    //         // hamburguer.Preco = 0.0;
 
-            var nomeShake = form["shake"]; /*Para pegar o preço do produto */
-            Shake shake = new Shake (
-                nomeShake,
-                shakeRepository.ObterPrecode (nomeShake));
+    //         var nomeShake = form["shake"]; /*Para pegar o preço do produto */
+    //         Shake shake = new Shake (
+    //             nomeShake,
+    //             shakeRepository.ObterPrecode (nomeShake));
 
-            pedido.Shake = shake;
+    //         pedido.Shake = shake;
 
-            Cliente cliente = clienteRepo.ObterPor (emailCliente);
+    //         Cliente cliente = clienteRepo.ObterPor (emailCliente);
 
 
 
-            pedido.Cliente = cliente;
+    //         pedido.Cliente = cliente;
 
-            pedido.DateDoPedido = DateTime.Now;
+    //         pedido.DateDoPedido = DateTime.Now;
 
-            pedido.PrecoTotal = hamburguer.Preco + shake.Preco;
+    //         pedido.PrecoTotal = hamburguer.Preco + shake.Preco;
 
-            if (agendamentoRepository.Inserir (pedido)) {
-                return View ("Sucesso", new RespostaViewModels("Sucesso") {
-                    NomeView = "Cadastro",
-                    UsuarioNome = ObterUsuarioNomeSession(),
-                    UsuarioEmail = ObterUsuarioSession()
-                });
+    //         if (agendamentoRepository.Inserir (pedido)) {
+    //             return View ("Sucesso", new RespostaViewModels("Sucesso") {
+    //                 NomeView = "Cadastro",
+    //                 UsuarioNome = ObterUsuarioNomeSession(),
+    //                 UsuarioEmail = ObterUsuarioSession()
+    //             });
 
-            } else {
-                return View ("Sucesso", new RespostaViewModels("Erro") {
-                    NomeView = "Cadastro",
-                    UsuarioNome = ObterUsuarioNomeSession(),
-                    UsuarioEmail = ObterUsuarioSession()
-                });
-        }
-    }
+    //         } else {
+    //             return View ("Sucesso", new RespostaViewModels("Erro") {
+    //                 NomeView = "Cadastro",
+    //                 UsuarioNome = ObterUsuarioNomeSession(),
+    //                 UsuarioEmail = ObterUsuarioSession()
+    //             });
+    //     }
+    // }
 
-        public IActionResult Aprovar (ulong id)
-        {
-            var pedido = agendamentoRepository.ObterPor(id);
+    //     public IActionResult Aprovar (ulong id)
+    //     {
+    //         var pedido = agendamentoRepository.ObterPor(id);
 
-            pedido.Status = (uint) StatusPedido.APROVADO;
+    //         pedido.Status = (uint) StatusPedido.APROVADO;
 
-            if(agendamentoRepository.Atualizar(pedido))
-            {
-                return RedirectToAction("Dashboard", "Administrador");
-            }
-            else
-            {
-                return View("Erro", new RespostaViewModels("Não foi possivel reprovado este pedido")
-                {
-                    NomeView = "Dashboard",
-                    UsuarioEmail = ObterUsuarioSession(),
-                    UsuarioNome = ObterUsuarioNomeSession()
-                });
-            }
+    //         if(agendamentoRepository.Atualizar(pedido))
+    //         {
+    //             return RedirectToAction("Dashboard", "Administrador");
+    //         }
+    //         else
+    //         {
+    //             return View("Erro", new RespostaViewModels("Não foi possivel reprovado este pedido")
+    //             {
+    //                 NomeView = "Dashboard",
+    //                 UsuarioEmail = ObterUsuarioSession(),
+    //                 UsuarioNome = ObterUsuarioNomeSession()
+    //             });
+    //         }
 
-        }
-         public IActionResult Reprovar (ulong id)
-        {
-            var pedido = agendamentoRepository.ObterPor(id);
+    //     }
+    //      public IActionResult Reprovar (ulong id)
+    //     {
+    //         var pedido = agendamentoRepository.ObterPor(id);
 
-            pedido.Status = (uint) StatusPedido.REPROVADO;
+    //         pedido.Status = (uint) StatusPedido.REPROVADO;
 
-            if(agendamentoRepository.Atualizar(pedido))
-            {
-                return RedirectToAction("Dashboard", "Administrador");
-            }
-            else
-            {
-                return View("Erro", new RespostaViewModels("Não foi possivel reprovado este pedido")
-                {
-                    NomeView = "Dashboard",
-                    UsuarioEmail = ObterUsuarioSession(),
-                    UsuarioNome = ObterUsuarioNomeSession()
-                });
-            }
+    //         if(agendamentoRepository.Atualizar(pedido))
+    //         {
+    //             return RedirectToAction("Dashboard", "Administrador");
+    //         }
+    //         else
+    //         {
+    //             return View("Erro", new RespostaViewModels("Não foi possivel reprovado este pedido")
+    //             {
+    //                 NomeView = "Dashboard",
+    //                 UsuarioEmail = ObterUsuarioSession(),
+    //                 UsuarioNome = ObterUsuarioNomeSession()
+    //             });
+    //         }
 
-        }
+    //     }
+        
     }
 }

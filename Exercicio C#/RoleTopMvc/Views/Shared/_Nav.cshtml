@@ -15,9 +15,21 @@
                 <!-- <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Rolê Top</a> </li> -->
                 <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Galeria" asp-action="Index">Galeria</a> </li>
                 <!-- <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="#">Faq</a> </li> -->
-                <div id="login-area">
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Index">Login</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cadastro" asp-action="Index">Cadastrar</a></li>
-                </div>
+                
+                    @if(string.IsNullOrEmpty(@Model.UsuarioEmail))
+                    {
+                        <div id="login-area">
+                            <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Index">Login</a></li>
+                            <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cadastro" asp-action="Index">Cadastrar</a></li>
+                        </div>      
+                    }
+                    else
+                    {   
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Logoff">Logoff</a></li> 
+                        <div id="pedido">
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Logoff">Orçamento</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Historico">Historico</a></li>    
+                    </div>
+                    }
             </ul>
         </nav>

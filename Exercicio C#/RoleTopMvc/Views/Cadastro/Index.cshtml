@@ -11,13 +11,13 @@
 
     <div id="tabela">
 
-        <form>
+        <form method="POST" action='@Url.Action("CadastrarCliente", "Cadastro")'> 
             <p><label for="cNome">
                     <!--Nome:--></label>
                 <input type="text" name="tName" id=cNome size="20" maxlength="30" placeholder="Nome Completo" /></p>
             <p><label for="cMail">
                     <!--E-mail:--></label>
-                <input type="email" name="tMail>" id=cMail size="20" maxlength="40" placeholder="E-mail" /></p>
+                <input type="email" name="tMail" id=cMail size="20" maxlength="40" placeholder="E-mail" /></p>
             <p><label for="cSenha">
                     <!--Senha:<--></label>
                 <input type="password" name="tSenha" id=cSenha size="8" maxlength="8" placeholder="Senha" /></p>

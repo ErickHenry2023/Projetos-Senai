@@ -1,14 +1,14 @@
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+// using System.Collections.Generic;
+// using System.Diagnostics;
+// using System.Linq;
+// using System.Threading.Tasks;
 using RoleTopMvc.Enums;
 using RoleTopMvc.Models;
 using RoleTopMvc.Repositories;
 using RoleTopMvc.ViewModels;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace RoleTopMvc.Controllers
 {
@@ -38,8 +38,11 @@ namespace RoleTopMvc.Controllers
 
             try
             {
-                Cliente cliente = new Cliente(form ["nome"], form["endereco"], form["telefone"], form["senha"], form["email"], DateTime.Parse(form["data-nascimento"]));
+                System.Console.WriteLine("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+                System.Console.WriteLine(form["tMail"]);
+                System.Console.WriteLine();
 
+                Cliente cliente = new Cliente(form ["tName"], form["tMail"],  form["tSenha"], form["tCPF/CNPJ"], form["tTel"]);
                 cliente.TipoUsuario = (uint) TipoUsuario.CLIENTE;
 
                 clienteRepository.Inserir(cliente);

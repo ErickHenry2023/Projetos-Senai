@@ -44,6 +44,10 @@
     {
         <link rel="stylesheet" href="~/css/style-dashboard.css">;
     }
+    else if("Historico".Equals(@Model.NomeView))
+    {
+        <link rel="stylesheet" href="~/css/style-historico.css">;
+    }
 
 </head>
 
@@ -54,7 +58,7 @@
 
 
     <div id="topo">
-        <a href='@Url.Action("Index", "Home" )'> <img src="img/logo.png" alt="logo" title="HOME"> </a>
+        <a href='@Url.Action("Index", "Home" )'> <img src="~/img/logo.png" alt="logo" title="HOME"> </a>
     </div>
 
     
@@ -86,164 +90,6 @@
         <link rel="stylesheet" href="~/css/style.css">;
     }
 
-
-    <!-- <footer>
-        <address>
-            Endereço: Rua Alameda Barão de Limeira, 539 - Santa Cecilia, São Paulo -SP, 01202-001
-            <br>
-            Telefone: (11) 3273-5000
-            <br>
-            Email: roletop@senai.com
-        </address>
-
-        <section id="local">
-            <div class="section-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8869961505543!2d-46.648477085071065!3d-23.53656648469522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deade6e3%3A0x124f377d06c7e71f!2sAlameda+Bar%C3%A3o+de+Limeira%2C+539+-+Campos+El%C3%ADseos%2C+S%C3%A3o+Paulo+-+SP%2C+01202-001!5e0!3m2!1sen!2sbr!4v1550223658410"
-                    width="100%" height="20%" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </section>
-
-
-        </div>
-
-        <div id="rodape">
-            <img src="img/logo.png" alt="logo" title="role top">
-
-            <div class="Esque">
-
-                <div class="icone">
-
-                    <div id="icone-telefone">
-                        <i class="fas fa-phone-alt"> </i>
-                        <p>(11) 3273-5000</p>
-                    </div>
-
-                    <div id="icone-mapa">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Rua Alameda Barão de Limeira, 539 - Santa Cecilia, São Paulo</p>
-                    </div>
-
-                    <div id= "icone-relogio">
-                            <i class="fas fa-clock"></i>
-                            <p>Seg à Dom -8:00 às 00:00</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="Direi">
-
-            </div>
-
-        </div>
-
-
-
-
-    </footer> -->
-
-
-    <!---------------JAVA S INICIO--------------->
-
-    <!-- <style>
-		.modal-container {
-			width: 100vw;
-			height: 100vh;
-			background: rgba(0,0,0,.5);
-			position: fixed;
-			top: 0px;
-			left: 0px;
-			z-index: 2000;
-			display: none;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.modal-container.mostrar {
-			display: flex;
-		}
-
-		.modal {
-			background: white;
-			width: 60%;
-			min-width: 300px;
-			padding: 40px;
-			border: 10px solid #988b7a;
-			box-shadow: 0 0 0 10px white;
-			position: relative;
-		}
-
-		keyframes modal {
-			from {
-				opacity: 0;
-				transform: translate3d(0, -60px, 0);
-			}
-			to {
-				opacity: 1;
-				transform: translate3d(0, 0, 0);
-			}
-		}
-
-		.mostrar .modal {
-			animation: modal .3s;
-		}
-
-		.fechar {
-			position: absolute;
-			font-size: 1.2em;
-			top: -30px;
-			right: -30px;
-			width: 50px;
-			height: 50px;
-			border-radius: 50%;
-			border: 4px solid white;
-			background: #988b7a;
-			color: white;
-			font-family: "PT Mono", monospace;
-			cursor: pointer;
-			box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
-		}
-	</style>
-
-	<div id="modal-promocao" class="modal-container">
-		<div class="modal">
-			<button class="fechar">x</button>
-			<h3 class="subtitulo">Cadastre-se na Newsletter</h3>
-			<form>
-				<input type="text" class="input" placeholder="Email">
-				<input type="button" class="button" value="Cadastrar">
-			</form>
-		</div>
-	</div>
-
-	<script>
-	
-		function iniciaModal(modalID) {
-			if(localStorage.fechaModal !== modalID) {
-				const modal = document.getElementById(modalID);
-				if(modal) {
-					modal.classList.add('mostrar');
-					modal.addEventListener('click', (e) => {
-						if(e.target.id == modalID || e.target.className == 'fechar') {
-							modal.classList.remove('mostrar');
-							localStorage.fechaModal = modalID;
-						}
-					});
-				}
-			}
-		}
-
-		const logo = document.querySelector('.contato .button');
-		logo.addEventListener('click', () => iniciaModal('modal-promocao'));
-
-		document.addEventListener('scroll', () => {
-			if(window.pageYOffset > 800) {
-				iniciaModal('modal-promocao')
-			}
-		})
-
-	</script> -->
-    <!---------------JAVA S FIM--------------->
 
     <!---------------RESPONSIVEL--------------->
 

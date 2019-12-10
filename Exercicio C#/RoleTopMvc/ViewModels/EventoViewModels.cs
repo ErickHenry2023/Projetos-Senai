@@ -9,7 +9,7 @@ namespace RoleTopMvc.ViewModels
         public Cliente Cliente {get;set;}
         public string NomeCliente {get; set;}
 
-        public EventoViewModels()                        /*22/11 */
+        public EventoViewModels()                        
         {
             this.Servicos = new List<Servico>();
             this.Cliente = new Cliente();
