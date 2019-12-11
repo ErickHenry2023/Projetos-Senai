@@ -17,8 +17,8 @@
     justify-content: center;
 }
 
-#topo > img{
-    width: 4;
+#topo img{
+    width: 4em;
     height: 3em;
 }
 

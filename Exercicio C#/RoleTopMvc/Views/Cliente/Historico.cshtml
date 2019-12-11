@@ -15,24 +15,25 @@
     <table>
         <thead>
             <tr>
-                <th>Data</th> 
+                 
                 <th>Nome</th>
                 <th>Email</th>
+                <th>Data Do Evento</th>
                 <th>Telefone</th>
                 <th>TipoEvento</th>
-                <th>PrecoTotal</th>
+                <th>Adicionais</th>
                 <th>Status</th>             
             </tr>
         </thead>
         <tbody>
              @foreach( var evento in Model.Eventos ) {
                 <tr>
-                    <td>@evento.Data</td>              
-                    <td>@evento.Nome</td>
-                    <td>@evento.Email</td>
-                    <td>@evento.Telefone</td>
-                    <td>@evento.TipoEvento</td>
-                    <td>@evento.PrecoTotal</td>
+                    <td>@evento.Cliente.Nome</td>  
+                    <td>@evento.Cliente.Email</td> 
+                    <td>@evento.DataRealizacao</td> 
+                    <td>@evento.Cliente.Telefone</td>
+                    <td>@evento.TipoEvento.Nome</td>
+                    <td>@evento.PrecoAdicionais</td>
                     <td>@evento.Status</td>
                 </tr>
             } 

@@ -1,7 +1,7 @@
 <main>
     <div id="tabela">
 
-        <form method="POST" action='@Url.Action("....", "Orcamento")'>     
+        <form method="POST" action='@Url.Action("Registrar", "Orcamento")'>     
 
             <p><label for="cNome">Nome:</label>
                 <input type="text" name="tName" id=cNome size="20" maxlength="30" placeholder="Nome Completo" /></p>
@@ -9,24 +9,24 @@
                 <input type="email" name="tMail>" id=cMail size="20" maxlength="40" /></p>
             <p><label for="cTel">Telefone:</label>
                 <input type="tel" name="tTel" id=cTel size="12" maxlength="12" placeholder="(11) 91234-5678" /></p>
-            <p><label for="cNome">Data:</label>
+            <p><label for="cData">Data:</label>
                 <input type="date" name="tData" id=CData /></p>
 
             <label for="cTEvento"> Tipo do evento:</label>
             <select type="text" name="tTEvento" id="cTEvento">
-                <option>Casamento</option>
-                <option>Aniversario</option>
-                <option>Corporativo</option>
-                <option>Debutante</option>
-                <option>Bodas</option>
-                <option>Outros</option>
+                <option value="Casamento">Casamento</option>
+                <option value="Aniversario">Aniversario</option>
+                <option value="Corporativo">Corporativo</option>
+                <option value="Debutante">Debutante</option>
+                <option value="Bodas">Bodas</option>
+                <option value="Outros">Outros</option>
             </select>
 
             <p><label for="cNome">Adicionais:</label>
 
-                <input type="radio" name="tadicionais" id="cSom" /> <label for="cSom">Som</label>
-                <input type="radio" name="tadicionais" id="cIluminação" /> <label for="ciluminação">Iluminação</label>
-                <input type="radio" name="tadicionais" id="cNenhuma" /> <label for="cNenhuma">Nenhuma</label></p>
+                <input type="checkbox" name="tadicionais" id="cSom" value="Som"/> <label for="cSom">Som</label>
+                <input type="checkbox" name="tadicionais" id="cIluminação" value="Iluminação" /> <label for="ciluminação">Iluminação</label>
+
 
             <label for="cFormadepagamento"> Forma de pagamento:</label>
             <select type="text" name="tcFormadepagamento" id="cFormadepagamento">

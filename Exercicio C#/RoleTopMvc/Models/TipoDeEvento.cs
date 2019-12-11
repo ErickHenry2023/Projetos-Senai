@@ -1,16 +1,16 @@
 namespace RoleTopMvc.Models
 {
-    public class Servico
+    public class TipoDeEvento
     {
-       public string Nome {get;set;}
+        public string Nome {get;set;}
        public double Preco {get; set;}
 
-        public Servico()
+        public TipoDeEvento()
         {
             
         }
 
-       public Servico( string nome, double preco)
+       public TipoDeEvento( string nome, double preco)
        {
             this.Nome = nome;
             this.Preco = preco;

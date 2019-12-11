@@ -7,6 +7,7 @@ namespace RoleTopMvc.Repositories
 {
     public class AgendamentoRepository : RepositoryBase
     {
+        public TipoEventoRepository tipoEventoRepository = new TipoEventoRepository();
         private const string PATH = "Database/Agendamento.csv"; /*quizas sea "servico" */
         public AgendamentoRepository()
         {
@@ -39,7 +40,7 @@ namespace RoleTopMvc.Repositories
             }
             return eventosCliente;
         }
-        public List<Evento> ObterTodos()                                /*Foi criado 21/11 hacer login */
+        public List<Evento> ObterTodos()                                
         {
             var linhas = File.ReadAllLines(PATH);
             List<Evento> eventos =new List<Evento> ();
@@ -49,15 +50,17 @@ namespace RoleTopMvc.Repositories
                 Evento evento = new Evento();
                 
                 evento.Id= ulong.Parse(ExtrairValorDoCampo("id", linha));
-                evento.Status =uint.Parse(ExtrairValorDoCampo("status_pedido", linha)); /*28/11 */
+                evento.Status =uint.Parse(ExtrairValorDoCampo("status_agendamento", linha)); 
 
                 evento.Cliente.Nome = ExtrairValorDoCampo("nome", linha);
                 evento.Cliente.Email = ExtrairValorDoCampo("email", linha);
 
-                // evento.TipoEvento.Nome = ExtrairValorDoCampo("tipoevento_nome", linha);
-                // evento.TipoEvento.Preco = double.Parse(ExtrairValorDoCampo("tipoevento_preco", linha));
+                
+                string nomeTipoEvento = ExtrairValorDoCampo("tipo_evento", linha);
 
-                evento.PrecoTotal = double.Parse(ExtrairValorDoCampo("preco_total", linha));
+                evento.TipoEvento = new TipoDeEvento(nomeTipoEvento, tipoEventoRepository.ObterPrecoDe(nomeTipoEvento));
+                evento.PrecoTipoEvento = double.Parse(ExtrairValorDoCampo("preco_t_evento", linha));
+                evento.PrecoAdicionais = double.Parse(ExtrairValorDoCampo("preco_adicionais", linha));
 
 
                 eventos.Add(evento);
@@ -111,7 +114,7 @@ namespace RoleTopMvc.Repositories
             Cliente c = agendamento.Cliente;
             Evento e = agendamento;
 
-            return $"id={agendamento.Id};status_agendamento={agendamento.Status};nome={c.Nome};telefone={c.Telefone};email={c.Email};preco_total={agendamento.PrecoTotal};";
+            return $"id={agendamento.Id};status_agendamento={agendamento.Status};nome={c.Nome};telefone={c.Telefone};email={c.Email};preco_t_evento={agendamento.PrecoTipoEvento};tipo_evento={agendamento.TipoEvento.Nome};preco_adicionais={agendamento.PrecoAdicionais}";
         }
     }
 }

@@ -4,17 +4,17 @@ using RoleTopMvc.Models;
 
 namespace RoleTopMvc.Repositories
 {
-    public class ServicoRepository
+    public class TipoEventoRepository
     {
-        private const string PATH = "Database/Servico.csv";
+        private const string PATH = "Database/TipoDeEvento.csv";
 
-        public double ObterPrecoDe(string nomeServico)               /*/*Para pegar o preço do produto */ 
+        public double ObterPrecoDe(string nomeTipoEvento)               /*/*Para pegar o preço do produto */ 
         {
             var lista = ObterTodos();
             var preco = 0.0;
             foreach (var item in lista)
             {
-                if(item.Nome.Equals(nomeServico))
+                if(item.Nome.Equals(nomeTipoEvento))
                 {
                     preco = item.Preco;
                     break;
@@ -24,20 +24,20 @@ namespace RoleTopMvc.Repositories
             return preco;
         }
 
-        public List<Servico> ObterTodos()
+        public List<TipoDeEvento> ObterTodos()
         {
-            List<Servico> servicos = new List<Servico>();
+            List<TipoDeEvento> tipoDeEvento = new List<TipoDeEvento>();
             string[] linhas = File.ReadAllLines(PATH);
             foreach (var linha in linhas)
             {
-                Servico s = new Servico();
+                TipoDeEvento s = new TipoDeEvento();
                 string[] dados =linha.Split(";");
                 s.Nome = dados[0];
                 s.Preco = double.Parse(dados[1]);
-                servicos.Add(s);
+                tipoDeEvento.Add(s);
             }
 
-            return servicos;
+            return tipoDeEvento;
         }
     }
 }
