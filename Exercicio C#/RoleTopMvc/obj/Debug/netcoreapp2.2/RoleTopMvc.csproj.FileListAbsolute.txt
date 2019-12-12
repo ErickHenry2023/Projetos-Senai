@@ -89,7 +89,6 @@ C:\Users\23516467894\Desktop\RoleTopMvc\obj\Debug\netcoreapp2.2\RoleTopMvc.Razor
 C:\Users\23516467894\Desktop\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Cadastro\Index.g.cshtml.cs
 C:\Users\23516467894\Desktop\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Historico.g.cshtml.cs
 C:\Users\23516467894\Desktop\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Index.g.cshtml.cs
-C:\Users\23516467894\Desktop\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Dashboard\Index.g.cshtml.cs
 C:\Users\23516467894\Desktop\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Galeria\Index.g.cshtml.cs
 C:\Users\23516467894\Desktop\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Home\index.g.cshtml.cs
 C:\Users\23516467894\Desktop\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Orcamento\Index.g.cshtml.cs
@@ -110,3 +109,4 @@ C:\Users\23516467894\Desktop\RoleTopMvc\obj\Debug\netcoreapp2.2\RoleTopMvc.cspro
 C:\Users\23516467894\Documents\Exercicios\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Historico.g.cshtml.cs
 C:\Users\23516467894\Documents\Exercicios\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Erro.g.cshtml.cs
 C:\Users\23516467894\Documents\Exercicios\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sucesso.g.cshtml.cs
+C:\Users\23516467894\Desktop\RoleTopMvc\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\Dashboard.g.cshtml.cs

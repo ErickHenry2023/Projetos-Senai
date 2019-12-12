@@ -13,7 +13,8 @@ namespace RoleTopMvc.Controllers
             {
                 NomeView = "Galeria",
                 UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterUsuarioNomeSession()
+                UsuarioNome = ObterUsuarioNomeSession(),
+                UsuarioTipo = ObterUsuarioTipoSession(),
             });
         }
     }

@@ -26,7 +26,8 @@ namespace RoleTopMvc.Controllers
             {
                 NomeView = "Cliente",
                 UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterUsuarioNomeSession()
+                UsuarioNome = ObterUsuarioNomeSession(),
+                UsuarioTipo = ObterUsuarioTipoSession()
             });
         }
 
@@ -87,7 +88,7 @@ namespace RoleTopMvc.Controllers
                     NomeView="Login",
                     UsuarioEmail=ObterUsuarioSession(),
                     UsuarioNome= ObterUsuarioNomeSession(),
-
+                    UsuarioTipo = ObterUsuarioTipoSession()
                 });
             }
         }
@@ -102,7 +103,9 @@ namespace RoleTopMvc.Controllers
                 Eventos = eventosCliente,
                 NomeView = "Historico",
                 UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterUsuarioNomeSession()
+                UsuarioNome = ObterUsuarioNomeSession(),
+                UsuarioTipo = ObterUsuarioTipoSession()
+
             });
         }
         public IActionResult Logoff()       /*27/11 */

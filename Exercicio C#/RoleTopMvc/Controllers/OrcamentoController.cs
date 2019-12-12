@@ -34,6 +34,7 @@ namespace RoleTopMvc.Controllers
             evm.NomeView = "Orcamento";
             evm.UsuarioEmail = ObterUsuarioSession();
             evm.UsuarioNome = ObterUsuarioNomeSession();
+            evm.UsuarioTipo = ObterUsuarioTipoSession();
 
             // clienteRepository.ObterPor();
 

@@ -16,10 +16,6 @@ namespace RoleTopMvc.Controllers
             if (!ninguemLogado && 
             (uint) TipoUsuario.ADMINISTRADOR == uint.Parse(ObterUsuarioTipoSession())){
 
-            
-
-            
-
             var agendamento = agendamentoRepository.ObterTodos();
             DashboardViewModel dashboardViewModel = new DashboardViewModel();
 
@@ -44,6 +40,7 @@ namespace RoleTopMvc.Controllers
 
             dashboardViewModel.NomeView = "Dashboard";
             dashboardViewModel.UsuarioEmail = ObterUsuarioSession();
+            dashboardViewModel.UsuarioTipo = ObterUsuarioTipoSession();
 
 
             return View(dashboardViewModel);

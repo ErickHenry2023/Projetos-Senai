@@ -20,7 +20,9 @@ namespace RoleTopMvc.Controllers
             {
                 NomeView = "Home",
                 UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterUsuarioNomeSession()
+                UsuarioNome = ObterUsuarioNomeSession(),
+                UsuarioTipo = ObterUsuarioTipoSession()
+                
             });
         }
 
