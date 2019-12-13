@@ -7,15 +7,17 @@ namespace RoleTopMvc.Models
 {
     public class Evento
     {
-        public ulong Id {get; set;}
         public Cliente Cliente {get;set;}
         public DateTime DataRealizacao {get; set;}
         public TipoDeEvento TipoEvento {get; set;}  /*alterar aqui p/ que funcione el agendamentorepository */
+        public List<Servico> Servicos {get; set;}
         public DateTime DataPedido {get; set;}
+        public string Adicionais {get; set;}
+
+        public ulong Id {get; set;}
        public double PrecoAdicionais {get; set;}
        public double PrecoTipoEvento {get; set;}
         public uint Status {get; set;}
-        public List<Servico> Servicos {get; set;}
 
         public Evento()
         {

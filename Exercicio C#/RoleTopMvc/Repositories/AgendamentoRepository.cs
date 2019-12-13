@@ -8,6 +8,8 @@ namespace RoleTopMvc.Repositories
     public class AgendamentoRepository : RepositoryBase
     {
         public TipoEventoRepository tipoEventoRepository = new TipoEventoRepository();
+        public ServicoRepository servicoRepository = new ServicoRepository();
+
         private const string PATH = "Database/Agendamento.csv"; /*quizas sea "servico" */
         public AgendamentoRepository()
         {
@@ -19,6 +21,8 @@ namespace RoleTopMvc.Repositories
 
         public bool Inserir(Evento agendamento)
         {
+            int totalPedidos = File.ReadAllLines(PATH).Length;          /* Length pega a quantidade de linhas do agendamento */
+            agendamento.Id = (ulong) totalPedidos + 1;
             var linha = new string[] {FazerRegistroCSV(agendamento)};
             File.AppendAllLines(PATH, linha);
 
@@ -48,20 +52,30 @@ namespace RoleTopMvc.Repositories
             foreach (var linha in linhas)
             {
                 Evento evento = new Evento();
+                evento.Servicos= new List<Servico>();
                 
                 evento.Id= ulong.Parse(ExtrairValorDoCampo("id", linha));
                 evento.Status =uint.Parse(ExtrairValorDoCampo("status_agendamento", linha)); 
 
                 evento.Cliente.Nome = ExtrairValorDoCampo("nome", linha);
                 evento.Cliente.Email = ExtrairValorDoCampo("email", linha);
-
-                
+                evento.DataRealizacao = DateTime.Parse(ExtrairValorDoCampo("data_evento", linha));
+                evento.Cliente.Telefone = ExtrairValorDoCampo("telefone", linha);
                 string nomeTipoEvento = ExtrairValorDoCampo("tipo_evento", linha);
+
+                evento.Adicionais= ExtrairValorDoCampo("nome_adicionais", linha);
 
                 evento.TipoEvento = new TipoDeEvento(nomeTipoEvento, tipoEventoRepository.ObterPrecoDe(nomeTipoEvento));
                 evento.PrecoTipoEvento = double.Parse(ExtrairValorDoCampo("preco_t_evento", linha));
                 evento.PrecoAdicionais = double.Parse(ExtrairValorDoCampo("preco_adicionais", linha));
 
+
+                
+                 string[] adicionais = evento.Adicionais.Split(",");
+                foreach(string adicional in adicionais)
+                {
+                    evento.Servicos.Add(new Servico(adicional, servicoRepository.ObterPrecoDe(adicional)));
+                }
 
                 eventos.Add(evento);
 
@@ -93,6 +107,7 @@ namespace RoleTopMvc.Repositories
                 for (int i = 0; i < eventosTotais.Length; i++)
                 {
                     var idConvertido = ulong.Parse(ExtrairValorDoCampo("id", eventosTotais[i]));
+                    
                     if (evento.Id.Equals(idConvertido))
                     {
                         linhaEvento = i;
@@ -114,7 +129,15 @@ namespace RoleTopMvc.Repositories
             Cliente c = agendamento.Cliente;
             Evento e = agendamento;
 
-            return $"id={agendamento.Id};status_agendamento={agendamento.Status};nome={c.Nome};telefone={c.Telefone};email={c.Email};preco_t_evento={agendamento.PrecoTipoEvento};tipo_evento={agendamento.TipoEvento.Nome};preco_adicionais={agendamento.PrecoAdicionais}";
+            List<string> listaAdicionais = new List<string>();
+            foreach(var servico in agendamento.Servicos) 
+            {
+                listaAdicionais.Add(servico.Nome);
+            }
+            string adicionais = string.Join(",", listaAdicionais.ToArray());
+
+                return $"id={agendamento.Id};status_agendamento={agendamento.Status};nome={c.Nome};telefone={c.Telefone};email={c.Email};preco_t_evento={agendamento.PrecoTipoEvento};tipo_evento={agendamento.TipoEvento.Nome};preco_adicionais={agendamento.PrecoAdicionais};data_evento={agendamento.DataRealizacao};nome_adicionais={adicionais}";
+            }
+
         }
     }
-}

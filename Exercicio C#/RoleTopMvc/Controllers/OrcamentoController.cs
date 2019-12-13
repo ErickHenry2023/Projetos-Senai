@@ -61,6 +61,10 @@ namespace RoleTopMvc.Controllers
 
             TipoDeEvento tipoevento = new TipoDeEvento(form["tTEvento"], tipoEventoRepository.ObterPrecoDe(form["tTEvento"]));
 
+            System.Console.WriteLine();
+            System.Console.WriteLine(form["tData"]);
+            System.Console.WriteLine("********************************************");
+
             Evento evento = new Evento(
                 cliente,
                 DateTime.Parse(form["tData"]),
@@ -122,6 +126,10 @@ namespace RoleTopMvc.Controllers
             var pedido = agendamentoRepository.ObterPor(id);
 
             pedido.Status = (uint) StatusEvento.REPROVADO;
+
+                System.Console.WriteLine();
+                System.Console.WriteLine(pedido.Status);
+                System.Console.WriteLine("*******************************************");
 
             if(agendamentoRepository.Atualizar(pedido))
             {

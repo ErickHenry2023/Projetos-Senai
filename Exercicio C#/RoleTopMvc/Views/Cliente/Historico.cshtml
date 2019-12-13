@@ -1,8 +1,5 @@
 @model RoleTopMvc.ViewModels.HistoricoViewModel;
-<!-- @{
-    ViewData["Title"] = "eventos - McBonald's";
-    ViewData["H2"] = "Histórico de eventos";
-} -->
+@using RoleTopMvc.Enums;        
 
 <main>
 <header>
@@ -26,15 +23,27 @@
             </tr>
         </thead>
         <tbody>
-             @foreach( var evento in Model.Eventos ) {
+             @foreach( var evento in Model.Eventos ) 
+             {
                 <tr>
                     <td>@evento.Cliente.Nome</td>  
                     <td>@evento.Cliente.Email</td> 
-                    <td>@evento.DataRealizacao</td> 
+                    <td>@evento.DataRealizacao.ToShortDateString()</td> 
                     <td>@evento.Cliente.Telefone</td>
                     <td>@evento.TipoEvento.Nome</td>
-                    <td>@evento.PrecoAdicionais</td>
-                    <td>@evento.Status</td>
+                    <td>@evento.Adicionais</td>
+                    @if(@evento.Status == (uint) @StatusEvento.PENDENTE)
+                    {
+                        <td style="color:orange;font-weight:bold">Pendente </td>        //mostar a status Pendente//
+                    }
+                    @if(@evento.Status == (uint) @StatusEvento.APROVADO)
+                    {
+                        <td style="color:green;font-weight:bold">Aprovado</td>
+                    } 
+                    @if(@evento.Status == (uint) @StatusEvento.REPROVADO)
+                    {
+                        <td style="color:red;font-weight:bold">Reprovado</td>
+                    } 
                 </tr>
             } 
         </tbody>

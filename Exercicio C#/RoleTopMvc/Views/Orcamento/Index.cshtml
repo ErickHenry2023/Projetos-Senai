@@ -10,7 +10,7 @@
             <p><label for="cTel">Telefone:</label>
                 <input type="tel" name="tTel" id=cTel size="12" maxlength="12" placeholder="(11) 91234-5678" /></p>
             <p><label for="cData">Data:</label>
-                <input type="date" name="tData" id=CData /></p>
+                <input type="date" name="tData" id="CData" /></p>
 
             <label for="cTEvento"> Tipo do evento:</label>
             <select type="text" name="tTEvento" id="cTEvento">
@@ -22,23 +22,27 @@
                 <option value="Outros">Outros</option>
             </select>
 
-            <p><label for="cNome">Adicionais:</label>
+            <div class="formadepagamento">
+                <div class="adicionais">
 
+                <label for="cNome">Adicionais:</label>
                 <input type="checkbox" name="tadicionais" id="cSom" value="Som"/> <label for="cSom">Som</label>
-                <input type="checkbox" name="tadicionais" id="cIluminação" value="Iluminação" /> <label for="ciluminação">Iluminação</label>
+                <input type="checkbox" name="tadicionais" id="cIluminação" value="Iluminação" /> <label for="ciluminação">Iluminação
+                </label>
+                </div>
 
+                <label for="cFormadepagamento"> Forma de pagamento:</label>
+                <select type="text" name="tcFormadepagamento" id="cFormadepagamento">
+                    <option>Dinheiro</option>
+                    <option>Boleto bancário</option>
+                    <option>Cartão de crédito</option>
+                    <option>Cartão de débito</option>
+                    <option>Cheque</option>
+                </select>
+            </div>
 
-            <label for="cFormadepagamento"> Forma de pagamento:</label>
-            <select type="text" name="tcFormadepagamento" id="cFormadepagamento">
-                <option>Dinheiro</option>
-                <option>Boleto bancário</option>
-                <option>Cartão de crédito</option>
-                <option>Cartão de débito</option>
-                <option>Cheque</option>
-            </select>
-
-            <p><label for="cNome">Sobre o Evento:</label>
-                <textarea name="tMsg" id=cMsg cols="45" rows="5" placeholder="DESCRIÇÃO DO EVENTO"></textarea></p>
+                <label for="cNome">Sobre o Evento:</label>
+                <textarea name="tMsg" id=cMsg cols="45" rows="5" placeholder="DESCRIÇÃO DO EVENTO"></textarea>
 
             <input type="submit" name="Enviar" value="Enviar">
 

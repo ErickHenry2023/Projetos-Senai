@@ -1,5 +1,5 @@
 @model RoleTopMvc.ViewModels.DashboardViewModel
-
+@using RoleTopMvc.Enums;
 
 <main>
 
@@ -53,15 +53,15 @@
             <div id="painel">
                 <div class="box-status-pedidos aprovados">
                     <h4>Aprovados</h4>
-                    <p>2</p>
+                    <p>@Model.EventosAprovados</p>
                 </div>
                 <div class="box-status-pedidos pendentes">
                     <h4>Pendentes</h4>
-                    <p>6</p>
+                    <p>@Model.EventosPendentes</p>
                 </div>
                 <div class="box-status-pedidos reprovados">
                     <h4>Reprovados</h4>
-                    <p>1</p>
+                    <p>@Model.EventosReprovados</p>
                 </div>
             </div>
         </section>
@@ -98,16 +98,27 @@
                 <tr>
                     <td>@evento.Cliente.Nome</td>  
                     <td>@evento.Cliente.Email</td> 
-                    <td>@evento.DataRealizacao</td> 
+                    <td>@evento.DataRealizacao.ToShortDateString()</td> 
                     <td>@evento.Cliente.Telefone</td>
                     <td>@evento.TipoEvento.Nome</td>
-                    <td>@evento.PrecoAdicionais</td>
+                    <td>@evento.Adicionais</td>
                     <th>
                         <a href='@Url.Action("Aprovar", "Orcamento", new {id = @evento.Id})' class="fa fa-check"></a>
                         <a href='@Url.Action("Reprovar", "Orcamento", new {id = @evento.Id})' class="fa fa-times"></a>
                     </th>
 
-                    <td>@evento.Status</td>
+                     @if(@evento.Status == (uint) @StatusEvento.PENDENTE)
+                    {
+                        <td style="color:#4B0082;font-weight:bold">Pendente </td>        //mostar a status Pendente//
+                    }
+                    @if(@evento.Status == (uint) @StatusEvento.APROVADO)
+                    {
+                        <td style="color:green;font-weight:bold">Aprovado</td>
+                    } 
+                    @if(@evento.Status == (uint) @StatusEvento.REPROVADO)
+                    {
+                        <td style="color:red;font-weight:bold">Reprovado</td>
+                    } 
 
                 </tr>
             } 
