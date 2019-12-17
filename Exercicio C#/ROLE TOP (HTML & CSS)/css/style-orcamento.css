@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    text-align: -webkit-center;
     /* padding: 0; */
 }
  /*******************TOPO/*******************/
@@ -66,7 +67,7 @@ h1 {
 
 .logo{
 justify-content: center;
-margin: -1.25em;
+/* margin: -1.25em; */
 }
 
 

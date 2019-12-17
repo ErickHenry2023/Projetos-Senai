@@ -2,6 +2,7 @@
     margin: 0;
     /* padding: 0; */
     text-align: -webkit-center;
+    justify-content: space-between;
 }
 
 /*****************TOPO********************/
@@ -283,12 +284,23 @@ footer{
 
 .fas{
     display: flex;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .icone {
     display: flex;
     flex-direction: column;
     margin: 1em;
+    justify-content: space-between;
+}
+
+.icone p{
+    display: inline;
+}
+
+.icone > *{
+
+    height: 1.666em
+    /* padding:  0.5em; */
 }
 /************RODAPE*************/
