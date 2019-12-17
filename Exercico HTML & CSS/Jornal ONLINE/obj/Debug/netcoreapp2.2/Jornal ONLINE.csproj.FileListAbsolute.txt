@@ -1,0 +1,30 @@
+C:\Users\23516467894\Documents\Jornal ONLINE\bin\Debug\netcoreapp2.2\Jornal ONLINE.deps.json
+C:\Users\23516467894\Documents\Jornal ONLINE\bin\Debug\netcoreapp2.2\Jornal ONLINE.runtimeconfig.json
+C:\Users\23516467894\Documents\Jornal ONLINE\bin\Debug\netcoreapp2.2\Jornal ONLINE.runtimeconfig.dev.json
+C:\Users\23516467894\Documents\Jornal ONLINE\bin\Debug\netcoreapp2.2\Jornal ONLINE.dll
+C:\Users\23516467894\Documents\Jornal ONLINE\bin\Debug\netcoreapp2.2\Jornal ONLINE.pdb
+C:\Users\23516467894\Documents\Jornal ONLINE\bin\Debug\netcoreapp2.2\Jornal ONLINE.Views.dll
+C:\Users\23516467894\Documents\Jornal ONLINE\bin\Debug\netcoreapp2.2\Jornal ONLINE.Views.pdb
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.csprojAssemblyReference.cache
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.csproj.CoreCompileInputs.cache
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.RazorAssemblyInfo.cache
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.RazorAssemblyInfo.cs
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.AssemblyInfoInputs.cache
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.AssemblyInfo.cs
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.TagHelpers.input.cache
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.TagHelpers.output.cache
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.RazorCoreGenerate.cache
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.RazorTargetAssemblyInfo.cache
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.RazorTargetAssemblyInfo.cs
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.Views.pdb
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.dll
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.pdb
+C:\Users\23516467894\Documents\Jornal ONLINE\obj\Debug\netcoreapp2.2\Jornal ONLINE.csproj.CopyComplete
