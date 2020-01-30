@@ -51,6 +51,7 @@ INSERT INTO Albuns (Nome, DataLancamento, IdArtista)
 VALUES ('Equilize', '29/01/2020', 'SP', );
 
 
+
 -- Update ALTERAR Dados
 
 UPDATE Artistas
@@ -73,6 +74,12 @@ VALUES ('Gospel'), ('Electronica');
 INSERT INTO Artistas (Nome)
 VALUES ('Fernandinho'), ('Aline Barros');
 
+INSERT INTO TipoUsuario (Titulo)
+VALUES ('Usuario'), ('Adm');
+
+INSERT INTO Usuarios (NOME)
+VALUES ('Jose'),('Maria');
+
 INSERT INTO Albuns (Nome, DataLancamento, QtdMinutos, Visualizacao, IdArtista,  IdEstilo)
 VALUES ('Anita', '29/01/2020', 120, '2000', 2, 1);
 
@@ -85,6 +92,14 @@ VALUES ('Matriz', '29/01/2019', 180, '1000', 3, 3);
 INSERT INTO Albuns (Nome, DataLancamento, QtdMinutos, Visualizacao, IdArtista,  IdEstilo)
 VALUES ('Tempo', '29/01/2019', 180, '1000', 5, 4);
 
+DELETE FROM Albuns
+WHERE IdAlbum = 3;
+
+
+
+UPDATE Artistas
+SET Nome = 'Claudinho e Buchecha - Ao Vivo'
+WHERE IdArtista = 1;
 
 
 
