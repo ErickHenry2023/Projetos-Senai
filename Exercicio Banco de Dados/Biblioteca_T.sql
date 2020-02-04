@@ -21,21 +21,27 @@ CREATE TABLE Livros (
 	IdAutor		INT FOREIGN KEY REFERENCES Autores (IdAutor), --Colocar as FK por ultimos--
 	IdGenero	INT FOREIGN KEY REFERENCES Generos (IdGenero)
 );
-
+-------------------------EXERCICIO-------------------------
 INSERT INTO Autores(NomeAutor)
-		VALUES('Bram Stoker'),('Dale Carnegie'),('E. L. James')
+		VALUES('Bram Stoker'),('Dale Carnegie'),('E. L. James'), ('Augusto dos Anjos')
 
 	INSERT INTO Generos(Nome)
-		VALUES('Ficção'),('Autoajuda'),('Romance')
+		VALUES('Poesia') , ('Fábula')
 
 	INSERT INTO Livros(Titulo,IdAutor,IdGenero)
 		VALUES('Drácula','2','1'),
 		('Como Fazer Amigos e Influenciar Pessoas','1','2'),
-		('Cinquenta Tons de Cinza','3','3');
+		('Cinquenta Tons de Cinza','3','3'),
+		('Eu','5','4'),
+		('O Pote Vazio','4','5');
 
 	UPDATE Livros SET Nome='Livro 1', DataLançamento='11/11/2011' WHERE IdAutor=2
 
--------------------------------------------------------
+
+
+
+
+-------------------------EXERCICIO-------------------------
 --Atributo = Coluna--
 
 SELECT * FROM Generos;
