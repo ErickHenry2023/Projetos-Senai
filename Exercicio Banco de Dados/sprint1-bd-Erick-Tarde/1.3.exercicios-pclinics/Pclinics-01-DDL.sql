@@ -1,3 +1,5 @@
+--DDL
+
 CREATE DATABASE Pclinics;
 
 USE Pclinics;
