@@ -1,4 +1,5 @@
 --CRIAR BANCO DE DADOS--
+--DDL
 CREATE DATABASE Biblioteca_Tarde;  --Executar primeiro o CREATE DATABASE--
 
 USE Biblioteca_Tarde;		--Seleciono o Banco que quero utilizar--
@@ -22,14 +23,34 @@ CREATE TABLE Livros (
 	IdGenero	INT FOREIGN KEY REFERENCES Generos (IdGenero)
 );
 
+-------------------------EXERCICIO DML-------------------------
+
+INSERT INTO Autores(NomeAutor)
+		VALUES('Bram Stoker'),('Dale Carnegie'),('E. L. James'), ('Augusto dos Anjos')
+
+	INSERT INTO Generos(Nome)
+		VALUES('Poesia') , ('Fábula')
+
+	INSERT INTO Livros(Titulo,IdAutor,IdGenero)
+		VALUES('Drácula','2','1'),
+		('Como Fazer Amigos e Influenciar Pessoas','1','2'),
+		('Cinquenta Tons de Cinza','3','3'),
+		('Eu','5','4'),
+		('O Pote Vazio','4','5');
+
+	UPDATE Livros SET Nome='Livro 1', DataLançamento='11/11/2011' WHERE IdAutor=2
+
+-------------------------EXERCICIO-------------------------
+
 --Atributo = Coluna--
 
-SELECT * FROM Generos
+--DQL SELECAO
+SELECT * FROM Generos;
 SELECT * FROM Autores;
 SELECT * FROM Livros;
 
 
---ALTERAR ADICIONAR UMA NOVA COLUNA
+--ALTERAR "ADICIONAR" UMA NOVA COLUNA
 ALTER TABLE Generos
 ADD Descricao VARCHAR(255);
 
@@ -41,9 +62,8 @@ ALTER COLUMN Descricao CHAR(100);
 ALTER TABLE Generos
 DROP COLUMN Descricao;
 
---Excluir
+--Excluir Tabela
 DROP TABLE Livros;
 
 --Excluir BANCO DE DADOS
 DROP DATABASE Biblioteca_Tarde;
-

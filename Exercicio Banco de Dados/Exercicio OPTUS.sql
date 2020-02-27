@@ -2,6 +2,7 @@ CREATE DATABASE Optus_T;
 
 USE Optus_T;
 
+--DDL
 CREATE TABLE Estilos (
 	IdEstilo INT PRIMARY KEY IDENTITY,
 	Nome	VARCHAR(250) NOT NULL
@@ -41,31 +42,6 @@ SELECT * FROM TipoUsuario;
 SELECT * FROM Usuarios; 
 
 -- Comando de inserir dados
-INSERT INTO Estilos (Nome)
-VALUES ('Pagode'),('Samba'),('Rock');
-
-INSERT INTO Artistas (Nome)
-VALUES ('Anita'),('Zeca Pagodinho'),('Pitty');
-
-INSERT INTO Albuns (Nome, DataLancamento, IdArtista)
-VALUES ('Equilize', '29/01/2020', 'SP', );
-
-
-
--- Update ALTERAR Dados
-
-UPDATE Artistas
-SET Nome = 'ZECA'
-WHERE IdArtista = 2;
-
--- DELETAR PAGAR DODOS
-DELETE FROM Artistas
-WHERE IdArtista = 5;
-
---LIMPAR TODOS OS DADOS DA TABELA
-TRUNCATE TABLE Artistas;
-
-
 
 --------EXERCICIO-------
 INSERT INTO Estilos (Nome)
@@ -92,22 +68,35 @@ VALUES ('Matriz', '29/01/2019', 180, '1000', 3, 3);
 INSERT INTO Albuns (Nome, DataLancamento, QtdMinutos, Visualizacao, IdArtista,  IdEstilo)
 VALUES ('Tempo', '29/01/2019', 180, '1000', 5, 4);
 
-DELETE FROM Albuns
-WHERE IdAlbum = 3;
+INSERT INTO Estilos (Nome)
+VALUES ('Pagode'),('Samba'),('Rock');
+
+INSERT INTO Artistas (Nome)
+VALUES ('Anita'),('Zeca Pagodinho'),('Pitty');
+
+INSERT INTO Albuns (Nome, DataLancamento, IdArtista)
+VALUES ('Equilize', '29/01/2020', 'SP', );
 
 
+-- Update ALTERAR Dados
 
 UPDATE Artistas
 SET Nome = 'Claudinho e Buchecha - Ao Vivo'
 WHERE IdArtista = 1;
 
+UPDATE Artistas
+SET Nome = 'ZECA'
+WHERE IdArtista = 2;
 
+-- DELETAR PAGAR DODOS
+DELETE FROM Artistas
+WHERE IdArtista = 5;
 
+DELETE FROM Albuns
+WHERE IdAlbum = 3;
 
-
-
-
-
+--LIMPAR TODOS OS DADOS DA TABELA
+TRUNCATE TABLE Artistas;
 
 
 
